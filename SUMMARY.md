@@ -1,6 +1,5 @@
 # Summary
 
 * [Introducción](README.md)
-* [Sección 1](merged.md)
-* [Sección 2](actual/merged-2024.md)
-
+* [Reporte de resultados 2023](2023/resultados.md)
+* [Reporte de resultados 2024](2024/resultados.md)
