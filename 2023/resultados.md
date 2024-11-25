@@ -690,7 +690,7 @@ Cerca del 47% de las mujeres sufrieron entre 1 y 3 tipos diferentes de violencia
 
 ![Edades de las víctimas de duplicación de identidad por primera vez](img/edad_duplicacion.png)
 
-- Se observa que la mayoría de las mujeres reporta haber tenido entre 30 y 49 años cuando fueron víctimas de esta violencia por primera vez.
+Se observa que la mayoría de las mujeres reporta haber tenido entre 30 y 49 años cuando fueron víctimas de esta violencia por primera vez.
 
 - El siguiente gráfico muestra el **Parentesco de la persona agresora con las mujeres víctimas de duplicación de identidad**
 
@@ -711,11 +711,11 @@ Cabe destacar que más del 50% de las mujeres víctimas no pudieron identificar 
 
 - Se han reportado 135 casos de ciberacoso.
 
-- La frecuencia con la que ocurrió la ocurrencia de la violencia se muestra en el siguiente gráfico:
+- La frecuencia con la que ocurrió la violencia se muestra en el siguiente gráfico:
 
 ![Frecuencia de la incidencia de ciberacoso](img/incidencia_ciberacoso.png)
 
-Más del 70% de las mujeres reportan haber sido víctimas de ciberacoso a lo sumo en 5 ocasiones.
+Más del 70% de las mujeres reportan haber sido víctimas de ciberacoso en más de dos ocasiones.
 
 - Por su parte, solo el 32% de las víctimas indica que sufrió la violencia en los seis meses previos a la encuesta como se muestra en el siguiente gráfico:
 
@@ -723,7 +723,7 @@ Más del 70% de las mujeres reportan haber sido víctimas de ciberacoso a lo sum
 
 - Posteriormente se visualizan los **rangos de edades** en que las mujeres fueron víctimas de ciberacoso por primera vez:
 
-![Rangos de edad para los cuales las mujeres fueron víctimas de ciberacoso por primera vez](img/edades_ciberacoso.png)
+![Rangos de edad en que las mujeres fueron víctimas de ciberacoso por primera vez](img/edades_ciberacoso.png)
 
 Cerca al 55% de las víctimas de ciberacoso tenían entre 18 y 39 años cuando la sufrieron por primera vez.
 
@@ -733,7 +733,7 @@ Cerca al 55% de las víctimas de ciberacoso tenían entre 18 y 39 años cuando l
 
 Un poco más del 62% de las víctimas manifiesta que no pudo identificar al agresor o que no lo conocía pero le pudo identificar.
 
-- _Las mujeres víctimas de ciberacoso indican que el 75% de sus agresores son hombres_.
+- _Las mujeres víctimas de ciberacoso indican que en el 75% de los casos, sus agresores son hombres_.
 
 ![Sexo del agresor para las víctimas de ciberacoso](img/sexo_ciberacosoM.png)
 
@@ -751,36 +751,31 @@ Se han reportado 45 casos de doxxing.
 
 Alrededor del 40% de las mujeres víctimas de doxxing reportan haberlo sufrido al menos 2 veces.
 
-```python
-temporalidad_doxxing = fg.grafico_temporalidad(tbl_doxxing)
-```
+- En el siguiente gráfico se observa que un poco menos del 30% de las mujeres indica que la violencia se produjo en los seis meses anteriores a la encuesta.
 
+![Porcentaje de mujeres que sufrieron doxxing en los últimos 6 meses](img/6meses_doxxing.png)
 
-```python
-edad_doxxing = fg.grafico_edad(tbl_doxxing)
-```
+- A continuación se observan los **rangos de edades** en que las mujeres fueron víctimas de doxxing por primera vez:
 
-```python
-parentesco_doxxing = fg.grafico_parentesco(tbl_doxxing)
-```
+![Rangos de edad en que las víctimas sufrieron doxxing por primera vez](img/edades_doxxing.png)
 
-```python
-sexo_doxxing = fg.grafico_sexo_parentesco(tbl_doxxing)
-```
+Cerca del 35% de las mujeres reportan haber tenido entre 10 y 29 años cuando sufrieron la violencia por primera vez.
 
+- En cuanto al **Parentesco con la persona agresora**, tenemos lo siguiente:
 
-```python
-medios_doxxing = fg.grafico_medios(tbl_doxxing)[2]
-```
+![Parentesco con la persona agresora](img/parentesco_doxxing.png)
 
+El 40% de las mujeres víctimas de doxxing manifiestan que la persona que los agredió era su ex-pareja en ese momento o que tenían una amistad.
 
-```python
-pd.DataFrame(tbl_doxxing.otraR_doxxing.value_counts()).rename_axis(
-    index={"otraR_doxxing": "Otras aplicaciones o redes sociales"}
-).rename(columns={"count": "N° de mujeres"})
-```
+- _Un poco más del 46% de los casos reportados indican que la persona agresora es también una mujer_.
 
+![Sexo de la persona agresora](img/sexo_doxxingM.png)
 
+- Así como para ciberacoso, se observa que Facebook, WhatsApp e Instagram son las aplicaciones por donde ocurren la mayoría de casos de doxxing.
+
+![Aplicación por la cual ocurrió la violencia](img/medios_doxxing.png)
+
+Posteriormente se muestra una tabla con las respuestas de acuerdo a otras aplicaciones o redes sociales reportadas.
 
 
 <div>
@@ -822,52 +817,40 @@ pd.DataFrame(tbl_doxxing.otraR_doxxing.value_counts()).rename_axis(
 </div>
 
 
-
 #### Resultados para los casos de mobbing
 
 
-```python
-tbl_mobbing = datos.query("mobbing == 1")[dic_violencias["mobbing"]]
-```
+Se han reportado 58 casos de mobbing, de los cuales alrededor del 60% manifiesta haberlo sufrido al menos 2 veces.
 
-Se han reportado 58 casos de mobbing.
+![Frecuencia de los casos de mobbing](img/incidencia_mobbing.png)
 
+- La mayoría de las mujeres manifiestan que la violencia no ocurrió en los seis meses previos a la encuesta.
 
-```python
-frecuencia_mobbing = fg.grafico_frecuencia(tbl_mobbing)
-```
+![Porcentaje de víctimas de mobbing en los últimos seis meses](img/6meses_mobbing.png)
 
-```python
-temporalidad_mobbing = fg.grafico_temporalidad(tbl_mobbing)
-```
+- A continuación se muestran los **rangos de edad** en que las mujeres fueron victimas de mobbing por primera vez:
 
-```python
-edad_mobbing = fg.grafico_edad(tbl_mobbing)
-```
+![Rangos de edad de las víctimas de mobbing por primera vez](img/edades_mobbing.png)
 
+Cerca del 65% de las mujeres víctimas de mobbing, indican haber tenido entre 30 y 59 años cuando sufrieron la violencia por primera vez.
 
-```python
-parentesco_mobbing = fg.grafico_parentesco(tbl_mobbing)
-```
+- Para el caso de mobbing, debido a la naturaleza de la violencia, se reformuló la pregunta acerca del parentesco con la persona agresora y en su lugar se pidió información sobre la relación laboral con esta.
 
+![Relación laboral con la persona agresora](img/relacionlaboral_mobbing.png)
 
-```python
-sexo_mobbing = fg.grafico_sexo_parentesco(tbl_mobbing)
-```
+Se reportan pocos casos en los que el agresor fue un subalterno y alrededor del 30% son víctimas de su propio jefe(a).
 
+- Asimismo, _las víctimas de mobbing indican que en la mayoría de los casos su agresor es un hombre_
+ 
+![Sexo de la persona agresora](img/sexo_mobbingM.png)
 
-```python
-medios_mobbing = fg.grafico_medios(tbl_mobbing)[2]
-```
+- A continuación se muestran las aplicaciones o redes sociales por las cuales las mujeres sufrieron mobbing.
 
+![Aplicaciones por las cuales ocurrió mobbing](img/medios_mobbing.png)
 
-```python
-pd.DataFrame(tbl_mobbing.otraR_mobbing.value_counts()).rename_axis(
-    index={"otraR_mobbing": "Otras aplicaciones o redes sociales"}
-).rename(columns={"count": "N° de mujeres"})
-```
+Resultando WhatsApp como la aplicación más común, seguida de Facebook y SMS.
 
-
+La siguiente tabla muestra las respuestas de las mujeres de acuerdo a otras aplicaciones por las cuales fueron víctimas de mobbing:
 
 
 <div>
@@ -925,49 +908,35 @@ pd.DataFrame(tbl_mobbing.otraR_mobbing.value_counts()).rename_axis(
 </div>
 
 
-
 #### Resultados para los casos de ciberdifamación
 
+Se han reportado 60 casos de ciberdifamación, indicando el 36.67% haber sido víctimas en 2 o más ocasiones.  
 
-```python
-tbl_ciberdifamacion = datos.query("ciberdifamacion == 1")[
-    dic_violencias["ciberdifamacion"]
-]
-```
+![Frecuencia de incidencia de ciberdifamación](img/incidencia_ciberdifamacion.png)
 
-Se han reportado 60 casos de ciberdifamación.
+- Pocas mujeres manifiestan haber sufrido esta violencia en los últimos seis meses, como se muestra en el siguiente gráfico:
 
+![Porcentaje de víctimas de ciberdifamación en los últimos 6 meses](img/6meses_ciberdifamacion.png)
 
-```python
-frecuencia_ciberdifamacion = fg.grafico_frecuencia(tbl_ciberdifamacion)
-```
+- Alrededor del 70% de las mujeres indican haber tenido 39 años o menos cuando fueron víctimas de ciberdifamación por primera vez.
 
+![Rangos de edad de las víctimas de ciberdifamación por primera vez](img/edades_ciberdifamacion.png)
 
-```python
-temporalidad_ciberdifamacion = fg.grafico_temporalidad(tbl_ciberdifamacion)
-```
+- A continuación se observan las respuestas en cuanto al parentesco de la víctima con la persona agresora:
 
+![Parentesco de la víctima de ciberdifamacion con la persona agresora](img/parentesco_ciberdifamacion.png)
 
-```python
-edad_ciberdifamacion = fg.grafico_edad(tbl_ciberdifamacion)
-```
+El 70% logró identificar a la persona agresora, de los cuales el 25% indica que tenía una amistad con su agresor.
 
-```python
-parentesco_ciberdifamacion = fg.grafico_parentesco(tbl_ciberdifamacion)
-```
+- De estos casos, _alrededor del 65% reporta haber sufrido de ciberdifamación causada por una mujer_.
 
-```python
-sexo_ciberdifamacion = fg.grafico_sexo_parentesco(tbl_ciberdifamacion)
-```
+![Sexo de la persona agresora para ciberdifamación](img/sexo_ciberdifamacionM.png)
 
+- Por su parte, Facebook es la red social más frecuente donde se produce la ciberdifamación, seguida de WhatsApp y correo electrónico. Esto se observa en el gráfico a continuación:
 
-```python
-pd.DataFrame(tbl_ciberdifamacion.otraR_ciberdifamacion.value_counts()).rename_axis(
-    index={"otraR_ciberdifamacion": "Otras aplicaciones o redes sociales"}
-).rename(columns={"count": "N° de mujeres"})
-```
+![Aplicaciones por las cuales se produjo ciberdifamación](img/medios_ciberdifamacion.png)
 
-
+Posteriormente se muestra una tabla con otras aplicaciones reportadas por las víctimas de ciberdifamación:
 
 
 <div>
@@ -1019,7 +988,6 @@ pd.DataFrame(tbl_ciberdifamacion.otraR_ciberdifamacion.value_counts()).rename_ax
   </tbody>
 </table>
 </div>
-
 
 
 #### Resultados para los casos de cibervigilancia (stalking)
