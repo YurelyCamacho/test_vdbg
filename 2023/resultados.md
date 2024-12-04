@@ -671,7 +671,7 @@ Las violencias que más reportaron las mujeres haber sufrido son Cyberflashing, 
 
 #### Cantidad de violencias sufridas
 
-![Número de violencias sufridas](img/numero_violencia)
+![Número de violencias sufridas](img/numero_violencia.png)
 
 Cerca del 47% de las mujeres sufrieron entre 1 y 3 tipos diferentes de violencias y, en promedio, una mujer es víctima de 3 diferentes tipos de violencias digitales.
 
