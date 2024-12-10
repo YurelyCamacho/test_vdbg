@@ -992,12 +992,10 @@ Posteriormente se muestra una tabla con otras aplicaciones reportadas por las v�
 
 #### Resultados para los casos de cibervigilancia (stalking)
 
+Se han reportado 166 casos de stalking,  de los cuales cerca del 70% indica haberlo sufrido más de 2 veces.
 
-```python
-tbl_stalking = datos.query("stalking == 1")[dic_violencias["stalking"]]
-```
+![Frecuencia de incidencia de stalking](img/incidencia_stalking.png)
 
-Se han reportado 166 casos de stalking.
 
 
 ```python
@@ -1034,8 +1032,6 @@ pd.DataFrame(tbl_stalking.otraR_stalking.value_counts()).rename_axis(
     index={"otraR_stalking": "Otras aplicaciones o redes sociales"}
 ).rename(columns={"count": "N° de mujeres"})
 ```
-
-
 
 
 <div>
@@ -1081,12 +1077,6 @@ pd.DataFrame(tbl_stalking.otraR_stalking.value_counts()).rename_axis(
 #### Resultados para los casos de ciberextorsión
 
 
-```python
-tbl_ciberextorsion = datos.query("ciberextorsion == 1")[
-    dic_violencias["ciberextorsion"]
-]
-```
-
 Se han reportado 21 casos de ciberextorsión.
 
 
@@ -1119,14 +1109,6 @@ sexo_ciberextorsion = fg.grafico_sexo_parentesco(tbl_ciberextorsion)
 ```python
 medios_ciberextorsion = fg.grafico_medios(tbl_ciberextorsion)[2]
 ```
-
-```python
-pd.DataFrame(tbl_ciberextorsion.otraR_ciberextorsion.value_counts()).rename_axis(
-    index={"otraR_ciberextorsion": "Otras aplicaciones o redes sociales"}
-).rename(columns={"count": "N° de mujeres"})
-```
-
-
 
 
 <div>
@@ -1168,10 +1150,6 @@ pd.DataFrame(tbl_ciberextorsion.otraR_ciberextorsion.value_counts()).rename_axis
 #### Resultados para los casos de grooming
 
 
-```python
-tbl_grooming = datos.query("grooming == 1")[dic_violencias["grooming"]]
-```
-
 Se han reportado 40 casos de grooming.
 
 
@@ -1205,14 +1183,6 @@ sexo_grooming = fg.grafico_sexo_parentesco(tbl_grooming)
 ```python
 medios_grooming = fg.grafico_medios(tbl_grooming)[2]
 ```
-
-
-```python
-pd.DataFrame(tbl_grooming.otraR_grooming.value_counts()).rename_axis(
-    index={"otraR_grooming": "Otras aplicaciones o redes sociales"}
-).rename(columns={"count": "N° de mujeres"})
-```
-
 
 
 
@@ -1275,13 +1245,9 @@ pd.DataFrame(tbl_grooming.otraR_grooming.value_counts()).rename_axis(
 </div>
 
 
-
 #### Resultados para los casos de phishing-vishing-smishing
 
 
-```python
-tbl_phishing_vs = datos.query("phishing_vs == 1")[dic_violencias["phishing_vs"]]
-```
 
 Se han reportado 78 casos de phishing-vishing-smishing.
 
@@ -1308,14 +1274,6 @@ parentesco_phishing_vs = fg.grafico_parentesco(tbl_phishing_vs)
 ```python
 sexo_phishing_vs = fg.grafico_sexo_parentesco(tbl_phishing_vs)
 ```
-
-
-```python
-pd.DataFrame(tbl_phishing_vs.otraR_phishing_vs.value_counts()).rename_axis(
-    index={"otraR_phishing_vs": "Otras aplicaciones o redes sociales"}
-).rename(columns={"count": "N° de mujeres"})
-```
-
 
 
 
@@ -1367,16 +1325,6 @@ medios_phishing_vs = fg.grafico_medios(tbl_phishing_vs)[2]
 #### Resultados para los casos de trata de personas en línea
 
 
-```python
-for i in datos.query("otraR_trata == 'Instagram '").index:
-    datos.loc[i, "instagram_trata"] = True
-```
-
-
-```python
-tbl_trata = datos.query("trata == 1")[dic_violencias["trata"]]
-```
-
 Se han reportado 39 casos de trata de personas en línea.
 
 
@@ -1409,15 +1357,6 @@ sexo_trata = fg.grafico_sexo_parentesco(tbl_trata)
 ```python
 medios_trata = fg.grafico_medios(tbl_trata)[2]
 ```
-
-
-```python
-pd.DataFrame(tbl_trata.otraR_trata.value_counts()).rename_axis(
-    index={"otraR_trata": "Otras aplicaciones o redes sociales"}
-).rename(columns={"count": "N° de mujeres"}).iloc[1:]
-```
-
-
 
 
 <div>
@@ -1463,10 +1402,6 @@ pd.DataFrame(tbl_trata.otraR_trata.value_counts()).rename_axis(
 #### Resultados para los casos de captación con fines de explotación sexual
 
 
-```python
-tbl_explotacion = datos.query("explotacion == 1")[dic_violencias["explotacion"]]
-```
-
 Se han reportado 7 casos de captación con fines de explotación sexual.
 
 
@@ -1500,15 +1435,6 @@ sexo_explotacion = fg.grafico_sexo_parentesco(tbl_explotacion)
 ```python
 medios_explotacion = fg.grafico_medios(tbl_explotacion)[2]
 ```
-
-
-```python
-pd.DataFrame(tbl_explotacion.otraR_explotacion.value_counts()).rename_axis(
-    index={"otraR_explotacion": "Otras aplicaciones o redes sociales"}
-).rename(columns={"count": "N° de mujeres"})
-```
-
-
 
 
 <div>
@@ -1550,10 +1476,6 @@ pd.DataFrame(tbl_explotacion.otraR_explotacion.value_counts()).rename_axis(
 #### Resultados para los casos de exclusión digital
 
 
-```python
-tbl_exclusion = datos.query("exclusion == 1")[dic_violencias["exclusion"]]
-```
-
 Se han reportado 37 casos de exclusión digital.
 
 
@@ -1578,15 +1500,6 @@ En el caso de exclusión no se realizó la pregunta asociada las personas agreso
 ```python
 medios_exclusion = fg.grafico_medios(tbl_exclusion)[2]
 ```
-
-
-```python
-pd.DataFrame(tbl_exclusion.otraR_exclusion.value_counts()).rename_axis(
-    index={"otraR_exclusion": "Otras aplicaciones o redes sociales"}
-).rename(columns={"count": "N° de mujeres"})
-```
-
-
 
 
 <div>
@@ -1639,10 +1552,7 @@ pd.DataFrame(tbl_exclusion.otraR_exclusion.value_counts()).rename_axis(
 
 #### Resultados para los casos de cyberflashing
 
-
-```python
-tbl_cyberflashing = datos.query("cyberflashing == 1")[dic_violencias["cyberflashing"]]
-```
+``
 
 Se han reportado 190 casos de cyberflashing.
 
@@ -1676,16 +1586,6 @@ sexo_cyberflashing = fg.grafico_sexo_parentesco(tbl_cyberflashing)
 ```python
 medios_cyberflashing = fg.grafico_medios(tbl_cyberflashing)[2]
 ```
-
-
-```python
-pd.DataFrame(tbl_cyberflashing.otraR_cyberflashing.value_counts()).rename_axis(
-    index={"otraR_cyberflashing": "Otras aplicaciones o redes sociales"}
-).rename(columns={"count": "N° de mujeres"})
-```
-
-
-
 
 <div>
 <style scoped>
@@ -1773,11 +1673,6 @@ pd.DataFrame(tbl_cyberflashing.otraR_cyberflashing.value_counts()).rename_axis(
 
 #### Resultados para los casos de deepfake
 
-
-```python
-tbl_deepfake = datos.query("deepfake == 1")[dic_violencias["deepfake"]]
-```
-
 Se han reportado 10 casos de deepfake.
 
 
@@ -1803,15 +1698,6 @@ sexo_deepfake = fg.grafico_sexo_parentesco(tbl_deepfake)
 ```python
 medios_deepfake = fg.grafico_medios(tbl_deepfake)[2]
 ```
-
-
-```python
-pd.DataFrame(tbl_deepfake.otraR_deepfake.value_counts()).rename_axis(
-    index={"otraR_deepfake": "Otras aplicaciones o redes sociales"}
-).rename(columns={"count": "N° de mujeres"})
-```
-
-
 
 
 <div>
@@ -1857,10 +1743,6 @@ pd.DataFrame(tbl_deepfake.otraR_deepfake.value_counts()).rename_axis(
 #### Resultados para los casos de clonación de aplicaciones
 
 
-```python
-tbl_clonacion = datos.query("clonacion == 1")[dic_violencias["clonacion"]]
-```
-
 Se han reportado 50 casos de clonación de aplicaciones.
 
 
@@ -1893,16 +1775,6 @@ sexo_clonacion = fg.grafico_sexo_parentesco(tbl_clonacion)
 ```python
 medios_clonacion = fg.grafico_medios(tbl_clonacion)[2]
 ```
-
-
-
-```python
-pd.DataFrame(tbl_clonacion.otraR_clonacion.value_counts()).rename_axis(
-    index={"otraR_clonacion": "Otras aplicaciones o redes sociales"}
-).rename(columns={"count": "N° de mujeres"})
-```
-
-
 
 
 <div>
@@ -2157,26 +2029,6 @@ reacciones = [s for s in list(datos.columns) if "reaccion_" in s]
 
 ```python
 tbl_reacciones = round(pd.DataFrame(datos[reacciones].sum() / len(datos) * 100), 2)
-```
-
-
-```python
-tbl_reacciones.rename(
-    index={
-        "reaccion_ignorar": "Ignoraron al agresor",
-        "reaccion_contar": "Le contaron a un amigo(a) o familiar",
-        "reaccion_ayuda": "Acudieron a un centro de ayuda o denuncia",
-        "reaccion_reportar": "Reportaron el perfil o publicación en la red social",
-        "reaccion_internet": "Redujeron el uso en internet",
-        "reaccion_borrar": "Borraron la aplicación donde ocurrió",
-        "reaccion_eliminar": "Eliminaron la cuenta de usuario",
-        "reaccion_crear": "Crearon una cuenta de usuario distinta",
-        "reaccion_bloquear": "Bloquearon a la persona agresora",
-        "reaccion_enfrentar": "Enfrentaron a la persona agresora",
-    },
-    columns={0: "cantidad"},
-    inplace=True,
-)
 ```
 
 
@@ -3553,113 +3405,11 @@ df_victima_conocimiento
 Esta tabla contiene la información de las mujeres que sufrieron las violencias y se compara con la respuesta de si conoce o no el nombre.
 
 
-```python
-# data = pd.read_pickle("vdbg_final.pkl")
-
-data = pd.read_csv("datos_final.csv", index_col=0)
-```
-
-
-```python
-parentesco_lista = [
-    s for s in list(data.columns) if "parentesco_" in s or "identificacion_" in s
-]
-```
-
-
-```python
-data.loc[:, parentesco_lista] = data[parentesco_lista].astype("category")
-```
-
-
-```python
-data.edad = data.edad.astype("category").cat.set_categories(
-    ["14-17", "18-25", "26-40", "41-60", "Más de 60"], ordered=True
-)
-```
+## Reporte de resultados para los hombres que respondieron la encuesta
 
 Los siguientes resultados corresponden a los 21 **hombres** que respondieron la encuesta.
 
-
-```python
-data.horas_internet = data.horas_internet.astype("category").cat.set_categories(
-    [
-        "No lo utilizo diariamente",
-        "Menos de 2 horas",
-        "2-4 horas",
-        "5-7 horas",
-        "Más de 7 horas",
-    ],
-    ordered=True,
-)
-```
-
-## Resultados para los hombres
-
-
-
-```python
-del data
-```
-
-
-```python
-# data = pd.read_pickle("vdbg_final.pkl")
-
-data = pd.read_csv("datos_final.csv", index_col=0)
-```
-
-
-```python
-parentesco_lista = [
-    s for s in list(data.columns) if "parentesco_" in s or "identificacion_" in s
-]
-```
-
-
-```python
-data.loc[:, parentesco_lista] = data[parentesco_lista].astype("category")
-```
-
-
-```python
-data.edad = data.edad.astype("category").cat.set_categories(
-    ["14-17", "18-25", "26-40", "41-60", "Más de 60"], ordered=True
-)
-```
-
-
-```python
-data.horas_internet = data.horas_internet.astype("category").cat.set_categories(
-    [
-        "No lo utilizo diariamente",
-        "Menos de 2 horas",
-        "2-4 horas",
-        "5-7 horas",
-        "Más de 7 horas",
-    ],
-    ordered=True,
-)
-```
-
-
-```python
-datos = data.query("sexo == 'Hombre'")
-```
-
 ### Rangos de edad
-
-
-```python
-tbl_edad = pd.DataFrame(datos.edad.value_counts()).sort_index()
-```
-
-
-```python
-tbl_edad_porcentaje = (
-    round(tbl_edad / tbl_edad.sum() * 100, 2)["count"].astype(str) + " %"
-)
-```
 
 
 ```python
@@ -3692,58 +3442,9 @@ fig.write_image("img/hombres/edades.png");
 
 ### Respuestas por estados
 
-
-
-```python
-serie_estados = datos.estado.value_counts()
-```
-
-
-```python
-fp = "./Estados_Venezuela/Estados_Venezuela.shp"
-df_mapa = gpd.read_file(fp)
-```
-
-
-```python
-ls = []
-for i in df_mapa.ESTADO:
-    if i in serie_estados.index:
-        ls.append(serie_estados.loc[i])
-    else:
-        ls.append(0)
-df_mapa["Hombres"] = ls
-```
-
-
-```python
-df_mapa.plot(
-    "Hombres",
-    cmap="GnBu",
-    categorical=True,
-    edgecolor="black",
-    legend=True,
-    legend_kwds={"loc": "center left", "bbox_to_anchor": (1, 0.5), "fmt": "{:.0f}"},
-);
-```
-
-
     
 ![png](merged_files/merged_356_0.png)
     
-
-
-
-```python
-informacion_estados = pd.DataFrame(serie_estados.sort_index())
-informacion_estados["%"] = round(
-    informacion_estados / informacion_estados.sum() * 100, 2
-)
-informacion_estados.rename_axis(index={"estado": "Estado"}, inplace=True)
-informacion_estados.rename(columns={"count": "Nº de hombres"})
-```
-
-
 
 
 <div>
@@ -3822,19 +3523,6 @@ informacion_estados.rename(columns={"count": "Nº de hombres"})
 ### Ocupaciones de los hombres
 
 #### Ocupaciones más comunes
-
-
-```python
-df_ocupaciones = (
-    pd.DataFrame(datos.ocupacion.value_counts())
-    .rename_axis(index={"ocupacion": "Ocupación"})
-    .rename(columns={"count": "Nº de hombres"})
-)
-df_ocupaciones["%"] = round(df_ocupaciones / len(datos) * 100, 2)
-df_ocupaciones.drop("Otra")[:10]
-```
-
-
 
 
 <div>
@@ -3919,15 +3607,6 @@ df_ocupaciones.drop("Otra")[:10]
 En "otros" hay 2 respuestas, que se dividen de la siguiente manera:
 
 
-```python
-pd.DataFrame(datos.ocupacionO.value_counts()).rename_axis(
-    index={"ocupacionO": "Ocupación"}
-).rename(columns={"count": "N° de hombres"})
-```
-
-
-
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -3972,19 +3651,6 @@ pd.DataFrame(datos.ocupacionO.value_counts()).rename_axis(
 
 
 ```python
-tbl_uso_internet = pd.DataFrame(datos.horas_internet.value_counts().sort_index())
-```
-
-
-```python
-tbl_uso_porcentaje = (
-    round(tbl_uso_internet / tbl_uso_internet.sum() * 100, 2)["count"].astype(str)
-    + " %"
-)
-```
-
-
-```python
 fig = px.bar(tbl_uso_internet, text=tbl_uso_porcentaje)
 fig.update_layout(
     title="Uso de internet por rangos de tiempo",
@@ -4016,54 +3682,6 @@ fig.write_image("img/hombres/uso_internet.png")
 
 
 ```python
-tbl_usos = pd.DataFrame(
-    datos[
-        [
-            "uso_familia",
-            "uso_trabajo",
-            "uso_venta",
-            "uso_distraer",
-            "uso_estudiar",
-            "uso_banco",
-            "uso_otra",
-            "uso_peli",
-            "uso_noticias",
-        ]
-    ].sum()
-)
-```
-
-
-```python
-tbl_usos.index = [
-    "Comunicarme con familiares y amigos/as",
-    "Trabajar",
-    "Vender productos",
-    "Distraerme",
-    "Estudiar o investigar",
-    "Realizar operaciones bancarias",
-    "Otras actividades",
-    "Ver películas y/o series",
-    "Ver noticias",
-]
-```
-
-
-```python
-tbl_usos_porcentaje = pd.DataFrame(
-    round(tbl_usos / tbl_usos.sum() * 100, 2)[0].astype(str) + " %"
-)
-```
-
-
-```python
-tbl_usos_concat = pd.concat(
-    [tbl_usos, tbl_usos_porcentaje.rename(columns={0: "p"})], axis=1
-).sort_values(0)
-```
-
-
-```python
 fig = px.bar(tbl_usos_concat[0], text=tbl_usos_concat.p)
 fig.update_layout(
     title="Usos de internet",
@@ -4091,16 +3709,6 @@ fig.write_image("img/hombres/usos_internet.png")
 ```
 
 En el caso de la respuesta "Otras actividades", se desglosa de la siguiente manera:
-
-
-```python
-pd.DataFrame(datos.uso_otraR.value_counts()).rename_axis(
-    index={"uso_otraR": "Otros usos de internet"}
-).rename(columns={"count": "Nº de hombres"})
-```
-
-
-
 
 <div>
 <style scoped>
@@ -4142,11 +3750,6 @@ pd.DataFrame(datos.uso_otraR.value_counts()).rename_axis(
 
 
 ```python
-tbl_covid_aumento = datos.covid_aumento.value_counts()
-```
-
-
-```python
 fig = go.Figure(data=[go.Pie(labels=tbl_covid_aumento.index, values=tbl_covid_aumento)])
 fig.update_layout(
     title_text="Aumento del uso de internet",
@@ -4167,58 +3770,6 @@ fig.write_image("img/hombres/covid.png")
 
 
 ### Uso de redes sociales/aplicaciones
-
-
-```python
-datos.loc[:, "telegram"] = datos.telegram.apply(str.strip)
-```
-
-
-```python
-redes = [
-    "facebook",
-    "twitter",
-    "instagram",
-    "tiktok",
-    "discord",
-    "slack",
-    "citas",
-    "videojuegos",
-    "whatsapp",
-    "telegram",
-    "reddit",
-    "estudio",
-    "linkedin",
-    "twich",
-    "youtube",
-    "pinterest",
-    "flickr",
-]
-
-dicts = {}
-for i in redes:
-    dicts[i.capitalize()] = (
-        datos[[i]].value_counts().reset_index().set_index(i)["count"]
-    )
-```
-
-
-```python
-tbl_aplicaciones = round(
-    pd.DataFrame.from_dict(dicts, orient="index").fillna(0)[
-        [
-            "Menos de 2 horas",
-            "2-4 horas",
-            "5-7 horas",
-            "Más de 7 horas",
-            "No la utilizo",
-        ]
-    ]
-    / len(datos)
-    * 100,
-    2,
-)
-```
 
 
 ```python
@@ -4255,55 +3806,6 @@ fig.write_image("img/hombres/uso_apps.png")
 
 
 ```python
-violencias_nombres = {
-    "identidad": "Duplicación de identidad",
-    "ciberacoso": "Ciberacoso",
-    "doxxing": "Doxxing",
-    "mobbing": "Mobbing",
-    "ciberdifamacion": "Ciberdifamación",
-    "stalking": "Cibervigilancia (stalking)",
-    "ciberextorsion": "Ciberextorsión",
-    "grooming": "Grooming",
-    "phishing_vs": "Phishing/Vishing/Smishing",
-    "trata": "Trata de personas en línea",
-    "explotacion": "Captación con fines de explotación sexual",
-    "exclusion": "Exclusión digital",
-    "cyberflashing": "Cyberflashing",
-    "deepfake": "Deepfake",
-    "clonacion": "Clonación de aplicaciones",
-}
-```
-
-
-```python
-violencias = list(violencias_nombres.keys())
-```
-
-
-```python
-dic = {}
-for i in violencias:
-    datos.loc[:, i] = datos[i].apply(str.strip).apply(str.capitalize)
-    dic[violencias_nombres[i]] = datos[[i]].value_counts().sort_index()
-```
-
-
-```python
-tbl_sufrio = pd.DataFrame.from_dict(dic, orient="index").fillna(0)
-```
-
-
-```python
-tbl_sufrio = tbl_sufrio.set_axis(["No", "Sí"], axis=1)
-```
-
-
-```python
-sufrio_porcentaje = round(tbl_sufrio / len(datos) * 100, 2)
-```
-
-
-```python
 fig = px.bar(
     sufrio_porcentaje[["Sí", "No"]].sort_values("Sí"),
     orientation="h",
@@ -4332,32 +3834,6 @@ fig.update_traces(
 )
 fig.show()
 fig.write_image("img/hombres/incidencia.png")
-```
-
-
-```python
-for i in violencias:
-    datos.loc[:, i].replace(
-        [
-            "No",
-            "Sí",
-        ],
-        [0, 1],
-        inplace=True,
-    )
-```
-
-
-```python
-tbl_numero_violencia = pd.DataFrame(
-    datos[violencias].T.sum().value_counts()
-).sort_index()
-tbl_violencia_porcentaje = round(tbl_numero_violencia / len(datos) * 100, 2)
-```
-
-
-```python
-tbl_violencia_porcentaje.index = tbl_violencia_porcentaje.index.astype("string")
 ```
 
 
@@ -4392,27 +3868,11 @@ fig.show()
 fig.write_image("img/hombres/numero_violencia.png")
 ```
 
-```python
-dic_violencias = {}
-for i in violencias:
-    dic_violencias[i] = [s for s in list(datos.columns)[:-32] if i in s]
-```
 
 #### Resultados para los casos de duplicación de identidad
 
 
-```python
-tbl_identidad = datos.query("identidad == 1")[dic_violencias["identidad"]]
-```
-
-
-```python
-print(
-    f"Se han reportado {tbl_identidad.iloc[:, 0].sum()} casos de duplicación de identidad."
-)
-```
-
-    Se han reportado 4 casos de duplicación de identidad.
+Se han reportado 4 casos de duplicación de identidad.
 
 
 
@@ -4448,17 +3908,7 @@ medios_identidad = fg.grafico_medios(tbl_identidad, "H")[2]
 
 #### Resultados para los casos de ciberacoso
 
-
-```python
-tbl_ciberacoso = datos.query("ciberacoso == 1")[dic_violencias["ciberacoso"]]
-```
-
-
-```python
-print(f"Se han reportado {tbl_ciberacoso.iloc[:, 0].sum()} casos de ciberacoso.")
-```
-
-    Se han reportado 5 casos de ciberacoso.
+Se han reportado 5 casos de ciberacoso.
 
 
 
@@ -4494,16 +3944,7 @@ medios_ciberacoso = fg.grafico_medios(tbl_ciberacoso, "H")[2]
 #### Resultados para los casos de doxxing
 
 
-```python
-tbl_doxxing = datos.query("doxxing == 1")[dic_violencias["doxxing"]]
-```
-
-
-```python
-print(f"Se han reportado {tbl_doxxing.iloc[:, 0].sum()} casos de doxxing.")
-```
-
-    Se han reportado 2 casos de doxxing.
+Se han reportado 2 casos de doxxing.
 
 
 
@@ -4541,15 +3982,6 @@ sexo_doxxing = fg.grafico_sexo_parentesco(tbl_doxxing, "H")
 ```python
 medios_doxxing = fg.grafico_medios(tbl_doxxing, "H")[2]
 ```
-
-
-```python
-pd.DataFrame(tbl_doxxing.otraR_doxxing.value_counts()).rename_axis(
-    index={"otraR_doxxing": "Otras aplicaciones o redes sociales"}
-).rename(columns={"count": "N° de hombres"})
-```
-
-
 
 
 <div>
@@ -4591,16 +4023,7 @@ pd.DataFrame(tbl_doxxing.otraR_doxxing.value_counts()).rename_axis(
 #### Resultados para los casos de mobbing
 
 
-```python
-tbl_mobbing = datos.query("mobbing == 1")[dic_violencias["mobbing"]]
-```
-
-
-```python
-print(f"Se han reportado {tbl_mobbing.iloc[:, 0].sum()} casos de mobbing")
-```
-
-    Se han reportado 6 casos de mobbing
+Se han reportado 6 casos de mobbing
 
 
 
@@ -4640,20 +4063,8 @@ medios_mobbing = fg.grafico_medios(tbl_mobbing, "H")[2]
 #### Resultados para los casos de ciberdifamación
 
 
-```python
-tbl_ciberdifamacion = datos.query("ciberdifamacion == 1")[
-    dic_violencias["ciberdifamacion"]
-]
-```
 
-
-```python
-print(
-    f"Se han reportado {tbl_ciberdifamacion.iloc[:, 0].sum()} casos de ciberdifamación."
-)
-```
-
-    Se han reportado 4 casos de ciberdifamación.
+Se han reportado 4 casos de ciberdifamación.
 
 
 
@@ -4691,18 +4102,7 @@ medios_ciberdifamacion = fg.grafico_medios(tbl_ciberdifamacion, "H")[2]
 #### Resultados para los casos de cibervigilancia (stalking)
 
 
-```python
-tbl_stalking = datos.query("stalking == 1")[dic_violencias["stalking"]]
-```
-
-
-```python
-print(
-    f"Se han reportado {tbl_stalking.iloc[:, 0].sum()} casos de cibervigilancia (stalking)."
-)
-```
-
-    Se han reportado 7 casos de cibervigilancia (stalking).
+Se han reportado 7 casos de cibervigilancia (stalking).
 
 
 
@@ -4742,21 +4142,7 @@ medios_stalking = fg.grafico_medios(tbl_stalking, "H")[2]
 
 #### Resultados para los casos de ciberextorsión
 
-
-```python
-tbl_ciberextorsion = datos.query("ciberextorsion == 1")[
-    dic_violencias["ciberextorsion"]
-]
-```
-
-
-```python
-print(
-    f"Se han reportado {tbl_ciberextorsion.iloc[:, 0].sum()} casos de ciberextorsión."
-)
-```
-
-    Se han reportado 4 casos de ciberextorsión.
+Se han reportado 4 casos de ciberextorsión.
 
 
 
@@ -4799,17 +4185,7 @@ medios_ciberextorsion = fg.grafico_medios(tbl_ciberextorsion, "H")[2]
 
 #### Resultados para los casos de grooming
 
-
-```python
-tbl_grooming = datos.query("grooming == 1")[dic_violencias["grooming"]]
-```
-
-
-```python
-print(f"Se han reportado {tbl_grooming.iloc[:, 0].sum()} casos de grooming.")
-```
-
-    Se han reportado 8 casos de grooming.
+Se han reportado 8 casos de grooming.
 
 
 
@@ -4893,18 +4269,7 @@ pd.DataFrame(tbl_grooming.otraR_grooming.value_counts()).rename_axis(
 #### Resultados para los casos de los casos de phishing/vishing/smishing
 
 
-```python
-tbl_phishing_vs = datos.query("phishing_vs == 1")[dic_violencias["phishing_vs"]]
-```
-
-
-```python
-print(
-    f"Se han reportado {tbl_phishing_vs.iloc[:, 0].sum()} casos de phishing/vishing/smishing."
-)
-```
-
-    Se han reportado 7 casos de phishing/vishing/smishing.
+`Se han reportado 7 casos de phishing/vishing/smishing.
 
 
 
@@ -4940,24 +4305,7 @@ medios_phishing_vs = fg.grafico_medios(tbl_phishing_vs, "H")[2]
 #### Resultados para los casos de trata
 
 
-```python
-for i in datos.query("otraR_trata == 'Instagram '").index:
-    datos.loc[i, "instagram_trata"] = True
-```
-
-
-```python
-tbl_trata = datos.query("trata == 1")[dic_violencias["trata"]]
-```
-
-
-```python
-print(
-    f"Se han reportado {tbl_trata.iloc[:, 0].sum()} casos de trata de persona en línea."
-)
-```
-
-    Se han reportado 2 casos de trata de persona en línea.
+ Se han reportado 2 casos de trata de persona en línea.
 
 
 
@@ -5000,18 +4348,7 @@ medios_trata = fg.grafico_medios(tbl_trata, "H")[2]
 #### Resultados para los casos de exclusión
 
 
-```python
-tbl_exclusion = datos.query("exclusion == 1")[dic_violencias["exclusion"]]
-```
-
-
-```python
-print(
-    f"Se han reportado {tbl_exclusion.iloc[:, 0].sum()} víctimas de exclusión digital."
-)
-```
-
-    Se han reportado 3 víctimas de exclusión digital.
+Se han reportado 3 víctimas de exclusión digital.
 
 
 
@@ -5043,17 +4380,7 @@ medios_exclusion = fg.grafico_medios(tbl_exclusion, "H")[2]
 
 #### Resultados para los casos de cyberflashing
 
-
-```python
-tbl_cyberflashing = datos.query("cyberflashing == 1")[dic_violencias["cyberflashing"]]
-```
-
-
-```python
-print(f"Se han reportado {tbl_cyberflashing.iloc[:, 0].sum()} casos de cyberflashing")
-```
-
-    Se han reportado 9 casos de cyberflashing
+Se han reportado 9 casos de cyberflashing
 
 
 
@@ -5084,18 +4411,7 @@ medios_cyberflashing = fg.grafico_medios(tbl_cyberflashing, "H")[2]
 #### Resultados para los casos de clonación de aplicaciones
 
 
-```python
-tbl_clonacion = datos.query("clonacion == 1")[dic_violencias["clonacion"]]
-```
-
-
-```python
-print(
-    f"Se han reportado {tbl_clonacion.iloc[:, 0].sum()} casos de clonación de aplicaciones"
-)
-```
-
-    Se han reportado 4 casos de clonación de aplicaciones
+Se han reportado 4 casos de clonación de aplicaciones
 
 
 
@@ -5125,11 +4441,6 @@ medios_clonacion = fg.grafico_medios(tbl_clonacion, "H")[2]
 
 
 ```python
-tbl_vdbg = datos.vdbg.value_counts()
-```
-
-
-```python
 fig = go.Figure(data=[go.Pie(labels=tbl_vdbg.index, values=tbl_vdbg)])
 fig.update_layout(
     title_text="Conocimiento de VDBG",
@@ -5145,23 +4456,6 @@ fig.update_traces(
 fig.show()
 fig.write_image("img/hombres/vdbg.png")
 ```
-
-
-```python
-vdbg_violencias = [s for s in list(datos.columns) if "vdbg_" in s]
-```
-
-
-```python
-con_violencia = pd.DataFrame(
-    datos.query("vdbg == 'Sí'")[vdbg_violencias[1:]].T.sum().value_counts()
-)
-con_violencia.index.name = "Nº de violencias conocidas"
-con_violencia["%"] = round(con_violencia / len(datos) * 100, 2)
-con_violencia.rename(columns={"count": "Cantidad de hombres"}).sort_index()
-```
-
-
 
 
 <div>
@@ -5245,16 +4539,6 @@ con_violencia.rename(columns={"count": "Cantidad de hombres"}).sort_index()
 
 
 ```python
-tbl_conocimiento_violencia = pd.DataFrame(datos[vdbg_violencias[1:]].sum())
-tbl_conocimiento_violencia.index = violencias
-tbl_conocimiento_violencia.rename(
-    index=violencias_nombres, columns={0: "cantidad"}, inplace=True
-)
-tbl_conocimiento_violencia = round(tbl_conocimiento_violencia / len(datos) * 100, 2)
-```
-
-
-```python
 fig = px.bar(
     tbl_conocimiento_violencia.sort_values("cantidad", ascending=False),
     y="cantidad",
@@ -5288,35 +4572,6 @@ fig.write_image("img/hombres/conocimiento_violencia.png")
 
 ### Reacciones de las víctimas al sufrir la(s) violencia(s)
 
-
-```python
-reacciones = [s for s in list(datos.columns) if "reaccion_" in s]
-```
-
-
-```python
-tbl_reacciones = round(pd.DataFrame(datos[reacciones].sum() / len(datos) * 100), 2)
-```
-
-
-```python
-tbl_reacciones.rename(
-    index={
-        "reaccion_ignorar": "Ignoraron al agresor",
-        "reaccion_contar": "Le contaron a un amigo(a) o familiar",
-        "reaccion_ayuda": "Acudieron a un centro de ayuda o denuncia",
-        "reaccion_reportar": "Reportaron el perfil o publicación en la red social",
-        "reaccion_internet": "Redujeron el uso en internet",
-        "reaccion_borrar": "Borraron la aplicación donde ocurrió",
-        "reaccion_eliminar": "Eliminaron la cuenta de usuario",
-        "reaccion_crear": "Crearon una cuenta de usuario distinta",
-        "reaccion_bloquear": "Bloquearon a la persona agresora",
-        "reaccion_enfrentar": "Enfrentaron a la persona agresora",
-    },
-    columns={0: "cantidad"},
-    inplace=True,
-)
-```
 
 
 ```python
@@ -5354,11 +4609,6 @@ fig.write_image("img/hombres/reaccion_violencia.png")
 
 
 ```python
-tbl_victima = datos.victima.value_counts()
-```
-
-
-```python
 fig = go.Figure(data=[go.Pie(labels=tbl_victima.index, values=tbl_victima)])
 fig.update_layout(
     title_text="Conocimiento de Víctimas",
@@ -5373,11 +4623,7 @@ fig.update_traces(
 fig.show()
 fig.write_image("img/hombres/victima.png")
 ```
-
-```python
-num_victimas = pd.DataFrame(datos.numero_victima.value_counts())
-```
-
+Número de víctimas
 
 ```python
 fig = px.bar(
@@ -5414,11 +4660,6 @@ fig.write_image("img/hombres/num_victimas.png")
 
 
 ```python
-tbl_leyes = datos.leyes_normas.value_counts()
-```
-
-
-```python
 fig = go.Figure(data=[go.Pie(labels=tbl_leyes.index, values=tbl_leyes)])
 fig.update_layout(
     title_text="Conocimiento de Leyes y Normas",
@@ -5438,67 +4679,6 @@ fig.write_image("img/hombres/ley.png")
 ### Interacciones entre ciertos ítems de la encuesta
 
 #### Tipos de violencia y edad en que ocurrió por primera vez
-
-
-```python
-edades_violencias = [s for s in list(datos.columns) if "edad_" in s]
-```
-
-
-```python
-lista_edades_violencias = []
-for i in edades_violencias:
-    j = (
-        pd.cut(
-            datos[edades_violencias].loc[:, i],
-            bins=[0, 10, 15, 18, 25, 30, 40, 50, 60, 75],
-            right=False,
-        )
-        .value_counts()
-        .sort_index()
-    )
-    j = j.reset_index()
-    for k in violencias_nombres.keys():
-        if k in j.columns[0]:
-            j["violencia"] = [violencias_nombres[k]] * len(j)
-    j = j.rename(columns={j.columns[0]: "Edad"})
-    lista_edades_violencias.append(j)
-```
-
-
-```python
-tbl_edades_primera_vez = pd.concat(lista_edades_violencias, join="inner").reset_index(
-    drop=True
-)
-```
-
-
-```python
-tbl_edades_primera_vez.Edad = tbl_edades_primera_vez.Edad.astype("str")
-```
-
-
-```python
-l_ = []
-for i in lista_edades_violencias:
-    j = round(i["count"] / i["count"].sum() * 100, 3)
-    i["count"] = j
-    l_.append(i)
-```
-
-
-```python
-edades_primera_vez = (
-    pd.concat(l_, join="inner")
-    .reset_index(drop=True)
-    .rename_axis(columns={"violencia": "Violencia"})
-)
-```
-
-
-```python
-edades_primera_vez.Edad = edades_primera_vez.Edad.astype("str")
-```
 
 
 ```python
@@ -5535,47 +4715,6 @@ fig.write_image("img/violencia_edad2.png")
 #### Tipo de violencia según el medio por el cual ocurrió
 
 
-```python
-lista_medios_hombres = [s for s in list(vars()) if "medios_" in s]
-ls_medios = []
-for i in [s for s in list(vars()) if "medios_" in s]:
-    df = vars()[i]
-    ls_medios.append(df)
-```
-
-
-```python
-lista_df_medios_hombres = []
-for df, i in zip(ls_medios, lista_medios):
-    tbl = pd.DataFrame(df)
-    if i.split("_")[1] in violencias_nombres.keys():
-        l_violencia = [violencias_nombres[i.split("_")[1]]] * len(df)
-    else:
-        l_violencia = ["Phishing/Vishing/Smishing"] * len(df)
-    tbl["violencia"] = l_violencia
-    tbl.rename(columns={0: "cantidad"}, inplace=True)
-    tbl.reset_index(inplace=True)
-    tbl.rename(columns={"index": "Medio"}, inplace=True)
-    lista_df_medios.append(tbl)
-```
-
-
-```python
-tbl_violencia_medio = pd.concat(lista_df_medios)
-```
-
-
-```python
-tbl_violencia_medio.reset_index(drop=True, inplace=True)
-```
-
-
-```python
-tbl_violencia_medio = tbl_violencia_medio.astype(
-    {"cantidad": "float", "violencia": "str", "Medio": "str"}
-)
-```
-
 
 ```python
 fig = px.bar(
@@ -5600,54 +4739,6 @@ fig.write_image("img/hombres/violencia_medio1.png")
 
 
 ```python
-lista_df_parentescos = [
-    parentesco_identidad[2],
-    parentesco_ciberacoso[2],
-    parentesco_doxxing[2],
-    parentesco_ciberdifamacion[2],
-    parentesco_stalking[2],
-    parentesco_ciberextorsion[2],
-    parentesco_cyberflashing[2],
-    parentesco_clonacion[2],
-]
-```
-
-
-```python
-parentescos_ = [
-    "identidad",
-    "ciberacoso",
-    "doxxing",
-    "ciberdifamacion",
-    "stalking",
-    "ciberextorsion",
-    "explotacion",
-    "cyberflashing",
-    "deepfake",
-    "clonacion",
-]
-```
-
-
-```python
-for i, j in zip(lista_df_parentescos, parentescos_):
-    if j in violencias_nombres.keys():
-        ls_index = [violencias_nombres[j]] * len(i)
-    i["violencia"] = ls_index
-```
-
-
-```python
-tbl_parentesco_ = pd.concat(lista_df_parentescos)
-```
-
-
-```python
-tbl_parentesco_.reset_index(inplace=True)
-```
-
-
-```python
 fig = px.bar(
     tbl_parentesco_,
     x="violencia",
@@ -5669,29 +4760,7 @@ fig.show()
 fig.write_image("img/hombres/violencia_parentesco1.png")
 ```
 
-NOTA: Para las siguientes violencias la pregunta sobre parentesco se reformulo a si logró o no identificar el agresor.
-
-
-```python
-parentesco_violencia = tbl_parentesco_.pivot(
-    index="violencia", columns="parentesco", values="count"
-).fillna(0)
-```
-
-
-```python
-tbl_grooPt = (
-    pd.concat(
-        [parentesco_grooming[2], parentesco_phishing_vs[2], parentesco_trata[2]],
-        axis=1,
-        keys=["Grooming", "Phishing", "Trata"],
-    )
-    .T.reset_index(level=1, drop=True)
-    .fillna(0)
-)
-tbl_grooPt
-```
-
+NOTA: Para las siguientes violencias la pregunta sobre parentesco se reformuló a si logró o no identificar el agresor.
 
 
 
@@ -5741,21 +4810,6 @@ tbl_grooPt
 
 NOTA: Para mobbing la víctima por la naturaleza de la agresión conoce a su agresor(a).
 
-
-```python
-tbl_parentesco_mobbing = parentesco_mobbing[1]
-```
-
-
-```python
-tbl_parentesco_mobbing.astype({"count": "int"}).rename_axis(
-    index={"parentesco_mobbing": "Relación laboral"}
-).rename(columns={"count": "N° de hombres"})
-```
-
-
-
-
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -5804,44 +4858,6 @@ tbl_parentesco_mobbing.astype({"count": "int"}).rename_axis(
 
 
 ```python
-tbl_identificacion_si = round(
-    pd.DataFrame(
-        parentesco_violencia[
-            [
-                "Fue mi ex-pareja en ese momento",
-                "Fue un compañero(a) de trabajo",
-                "No conocía a quien me agredió, pero le identifiqué",
-                "Teníamos una amistad",
-            ]
-        ].sum(1)
-    ).rename(columns={0: "Sí"}),
-    2,
-)
-```
-
-
-```python
-tbl_identificacion_no = pd.DataFrame(
-    parentesco_violencia["No le pude identificar"]
-).rename(columns={"No le pude identificar": "No"})
-```
-
-
-```python
-tabla_identificacion = pd.concat(
-    [tbl_identificacion_si.join(tbl_identificacion_no), tbl_grooPt]
-)
-```
-
-
-```python
-porcentaje_identificacion = round(
-    (tabla_identificacion.T / tabla_identificacion.sum(1) * 100).T, 2
-).fillna(0)
-```
-
-
-```python
 fig = px.bar(
     porcentaje_identificacion,
     barmode="group",
@@ -5875,61 +4891,6 @@ fig.write_image("img/hombres/id_agresor.png")
 
 
 #### Sexo del agresor por tipo de violencia
-
-
-```python
-variables_sexo = [
-    "sexo_identidad",
-    "sexo_ciberacoso",
-    "sexo_doxxing",
-    "sexo_mobbing",
-    "sexo_ciberdifamacion",
-    "sexo_stalking",
-    "sexo_ciberextorsion",
-    "sexo_grooming",
-    "sexo_phishing_vs",
-]
-```
-
-
-```python
-sexo_violencias = []
-names_ = []
-for i in variables_sexo:
-    df = vars()[i]
-    names_.append(df[1].index.name.split)
-    sexo_violencias.append(df[1])
-```
-
-
-```python
-tbl_sexo_violencias = (
-    pd.concat(
-        sexo_violencias,
-        join="outer",
-        axis=1,
-        keys=[
-            "Duplicación de identidad",
-            "Ciberacoso",
-            "Doxxing",
-            "Mobbing",
-            "Ciberdifamación",
-            "Cibervigilancia (stalking)",
-            "Ciberextorsión",
-            "Grooming",
-            "Phishing/Vishing/Smishing",
-            "Clonación",
-        ],
-    )
-    .T.reset_index(1, drop=True)
-    .fillna(0)
-)
-```
-
-
-```python
-sexo_porcentaje = round((tbl_sexo_violencias.T / tbl_sexo_violencias.sum(1) * 100).T, 2)
-```
 
 
 ```python
@@ -5968,136 +4929,10 @@ fig.show()
 fig.write_image("img/hombres/sexo_agresor_violencia.png")
 ```
 
-```python
-cruce = porcentaje_identificacion.join(sexo_porcentaje)
-```
-
-
-```python
-cruce.columns = pd.MultiIndex.from_tuples(
-    [
-        ("Sí", "%"),
-        ("No", "%"),
-        ("Sí", "Mujer"),
-        ("Sí", "Hombre"),
-        ("Sí", "Un grupo de personas"),
-    ]
-)
-```
-
-
-```python
-variables = [
-    s
-    for s in tbl_identidad.columns
-    if s.startswith("sexo_") or s.startswith("parentesco_")
-]
-```
-
-
-```python
-lista = []
-for j, k in zip(tbl_identidad[variables[0]], tbl_identidad[variables[1]]):
-    if j != "No le pude identificar" and j != "No":
-        lista.append((j, k))
-df = pd.DataFrame(lista, columns=["Parentesco", "Sexo"]).value_counts()
-```
-
-
-```python
-dic_sexo = {}
-for i in [s for s in violencias if s != "exclusion"]:
-    lista = []
-    g = datos.query(f"{i} == 1")
-    for j, k in zip(g[dic_violencias[i][4]], g[dic_violencias[i][5]]):
-        if j != "No le pude identificar" and j != "No":
-            lista.append((j, k))
-    dic_sexo[i] = pd.DataFrame(lista, columns=["Parentesco", "Sexo"]).value_counts()
-```
-
-
-```python
-for i in [s for s in violencias if s != "exclusion"]:
-    lista = []
-    g = datos.query(f"{i} == 1")
-    for j, k in zip(g[dic_violencias[i][4]], g[dic_violencias[i][5]]):
-        if j != "No le pude identificar" and j != "No":
-            lista.append((j, k))
-    dic_sexo[i] = pd.DataFrame(lista, columns=["Parentesco", "Sexo"]).value_counts()
-```
-
 #### Sexo del agresor(a) y parentesco con la víctima por tipo de violencia
 
 
-```python
-dic_sexo = {}
-for i in [s for s in violencias if s != "exclusion"]:
-    lista = []
-    g = datos.query(f"{i} == 1")
-    for j, k in zip(g[dic_violencias[i][4]], g[dic_violencias[i][5]]):
-        if j != "No le pude identificar" and j != "No":
-            lista.append((i, j, k))
-    dic_sexo[i] = pd.DataFrame(
-        lista, columns=["Violencia", "Parentesco", "Sexo"]
-    ).value_counts()
-```
 
-
-```python
-lista_sexo = [
-    dic_sexo[i].reset_index(level=0, drop=True)
-    for i in dic_sexo
-    if i
-    in [
-        "identidad",
-        "ciberacoso",
-        "doxxing",
-        "ciberdifamacion",
-        "stalking",
-        "ciberextorsion",
-        "explotacion",
-        "cyberflashing",
-        "deepfake",
-        "clonacion",
-    ]
-]
-```
-
-
-```python
-lista_parentesco_sexo = [
-    round(dic_sexo[i] / dic_sexo[i].sum() * 100, 2).reset_index()
-    for i in dic_sexo
-    if i
-    in [
-        "identidad",
-        "ciberacoso",
-        "doxxing",
-        "ciberdifamacion",
-        "stalking",
-        "ciberextorsion",
-        "explotacion",
-        "cyberflashing",
-        "deepfake",
-        "clonacion",
-    ]
-]
-```
-
-
-```python
-porcentaje_parentesco_sexo = pd.concat(lista_parentesco_sexo)
-```
-
-
-```python
-porcentaje_parentesco_sexo.Violencia.replace(violencias_nombres, inplace=True)
-```
-
-
-```python
-porcentaje_parentesco_sexo.reset_index(drop=True, inplace=True)
-```
 
 
 ```python
@@ -6142,47 +4977,12 @@ fig.add_annotation(
 )
 fig.show()
 fig.write_image("img/hombres/violencia_parentesco_sexo.png")
-
-
-
-```python
-tbl_parentco_sexo = (
-    pd.concat(
-        lista_sexo,
-        join="outer",
-        keys=[
-            "identidad",
-            "ciberacoso",
-            "doxxing",
-            "ciberdifamacion",
-            "stalking",
-            "ciberextorsion",
-            "explotacion",
-            "cyberflashing",
-            "deepfake",
-            "clonacion",
-        ],
-        axis=1,
-    )
-    .fillna(0)
-    .sort_index(level=0)
-    .T
-)
 ```
+
+
 
 #### Sexo del agresor(a) y parentesco con la víctima por tipo de violencia: individual
 
-
-```python
-sp_df = []
-lista_para_graficar = []
-for i in lista_parentesco_sexo:
-    df = i.pivot(index="Parentesco", columns="Sexo", values="count").fillna(0)
-    if "Hombre" in df.columns:
-        df.Hombre = df.Hombre * -1
-        sp_df.append(df)
-        lista_para_graficar.append(i)
-```
 
 
 ```python
@@ -6272,53 +5072,8 @@ for i, j in zip(sp_df, lista_para_graficar):
 
 
 
-```python
-veces_violencias = [s for s in list(datos.columns) if "veces_" in s]
-```
-
-
-```python
-violencias_6 = [s for s in list(datos.columns) if "6_" in s]
-```
-
-
-```python
-r_inf = []
-r_sup = []
-for i in datos["edad"]:
-    if i == "Más de 60":
-        r_inf.append(60)
-        r_sup.append(100)
-    else:
-        r_inf.append(int(i.split("-")[0]))
-        r_sup.append(int(i.split("-")[1]))
-```
-
-
-```python
-datos["r_inf"] = r_inf
-```
-
-
-```python
-datos["r_sup"] = r_sup
-```
-
 #### Violencias por ocupación
 
-
-```python
-dict_violencias_ocupaciones = {}
-for i in violencias:
-    df = datos.query(f"{i} == 1 and ocupacion != 'Otra'")["ocupacion"].value_counts()
-    df = round(df[:10] / df.sum() * 100, 2)
-    dict_violencias_ocupaciones[violencias_nombres[i]] = df
-```
-
-
-```python
-tbl_vo = pd.DataFrame.from_dict(dict_violencias_ocupaciones, orient="index").fillna(0)
-```
 
 
 ```python
@@ -6348,42 +5103,6 @@ fig.write_image("img/hombres/violencia_ocupacion.png")
 
 
 #### Violencias por estados
-
-
-```python
-for i in violencias:
-    df_ = datos.query(f"{i} == 1")["estado"].value_counts()
-    df = df_ / df_.sum() * 100
-
-    lista_valores = []
-    for j in df_mapa.ESTADO:
-        if j in df.index:
-            lista_valores.append(df.loc[j])
-        else:
-            lista_valores.append(0)
-    df_mapa[violencias_nombres[i]] = lista_valores
-```
-
-
-```python
-tbl_violencia_estado = df_mapa.drop(columns="Hombres")
-```
-
-
-```python
-tbl_ve = round(
-    pd.melt(
-        tbl_violencia_estado,
-        id_vars=["ESTADO"],
-        value_vars=[violencias_nombres[s] for s in violencias_nombres.keys()],
-        var_name="violencia",
-        value_name="porcentaje",
-    )
-    .pivot(index="violencia", columns="ESTADO", values="porcentaje")
-    .sort_index(axis=0),
-    2,
-)
-```
 
 
 ```python
@@ -6421,38 +5140,15 @@ fig.write_image("img/hombres/violencia_estado.png")
 #### Promedio de incidencias
 
 
-```python
-round(
-    (tbl_numero_violencia.index * tbl_numero_violencia["count"]).sum()
-    / tbl_numero_violencia.sum().iloc[0],
-    2,
-)
-```
-
-
-
-
     3.1
 
 
 
-En promedio, una mujer es víctima de 3 violencias.
+En promedio, un hombre es víctima de 3 violencias.
 
 #### Cantidad de veces en que la víctima reporta haber sufrido la violencia
 
 
-```python
-repeticiones = []
-for j in [i for i in list(vars().keys()) if "frecuencia_" in i]:
-    df = vars()[j][2].rename(columns={"count": fg.violencias_names[j.split("_")[1]]})
-    df.rename(index={"Sólo una vez": "Solo una vez"}, inplace=True)
-    repeticiones.append(df)
-```
-
-
-```python
-tbl_repeticiones = pd.concat(repeticiones, axis=1).fillna(0).T
-```
 
 
 ```python
@@ -6489,47 +5185,6 @@ fig.write_image("img/hombres/repeticiones_violencia.png")
 #### Patrón de uso de aplicaciones por tipo de violencias y según medio más frecuente por el que ocurrió
 
 
-```python
-dict_medios_medios = {}
-medio_frecuente = []
-for i in violencias:
-    df = datos.query(f"{i} == 1")
-    if len(df) != 0:
-        variable = [s for s in df.columns if "".join(["medio_", i]) in s]
-        start_cols = list(range(23, 40))
-        var_idx = df.columns.get_loc(variable[0])
-        end_col = df.columns.get_loc("".join(["otraR_", i]))
-
-        # concatenar rangos de columnas con np.r_[]
-        col_range = np.r_[start_cols, var_idx + 1 : end_col]
-
-        # seleccionar las columnas del DataFrame
-        info = df.iloc[:, col_range]
-
-        # Cálculo del valor máximo en el medio de la violencia
-        medio_mas_freq = (
-            info.loc[:, "".join(["twitter_", i]) :].sum().astype(int).idxmax()
-        )
-        medio_frecuente.append(medio_mas_freq.split("_")[0])
-
-        df_medios = info.query(f"{medio_mas_freq} == 1")[redes]
-
-        dicts = {}
-        for red_app in redes:
-            dicts[red_app.capitalize()] = (
-                df_medios[[red_app]]
-                .value_counts()
-                .reset_index()
-                .set_index(red_app)["count"]
-            )
-
-        aplicaciones = pd.DataFrame.from_dict(dicts, orient="index").fillna(0)
-
-        dict_medios_medios[violencias_nombres[i]] = round(
-            aplicaciones / len(df) * 100, 2
-        )
-```
-
 
 ```python
 for i, j in zip(dict_medios_medios.keys(), medio_frecuente):
@@ -6565,27 +5220,6 @@ for i, j in zip(dict_medios_medios.keys(), medio_frecuente):
 
 
 #### Víctimas y conocimiento del nombre de la violencia que sufrieron
-
-
-```python
-dict_conocimiento_frecuencia = {}
-for i in violencias:
-    df = datos.query(f"{i} == 1")[["vdbg"]].value_counts()
-    dict_conocimiento_frecuencia[violencias_nombres[i]] = round(df / df.sum() * 100, 2)
-```
-
-
-```python
-df_victima_conocimiento = pd.DataFrame.from_dict(
-    dict_conocimiento_frecuencia, orient="index"
-).fillna(0)
-
-df_victima_conocimiento.columns.name = "Conocimiento del nombre de la violencia"
-
-df_victima_conocimiento
-```
-
-
 
 
 <div>
@@ -6683,8 +5317,3 @@ df_victima_conocimiento
 
 
 Esta tabla contiene la información de las mujeres que sufrieron las violencias y se compara con la respuesta de si conoce o no el nombre.
-
-
-```python
-
-```
