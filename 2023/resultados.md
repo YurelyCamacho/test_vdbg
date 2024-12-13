@@ -680,7 +680,7 @@ Cerca del 47% de las mujeres sufrieron entre 1 y 3 tipos diferentes de violencia
 
 - Se han reportado 43 casos de duplicación de identidad, de los cuales el 74,4% indica solo haberla sufrido una vez.
 
-![Incidencia de duplicación de identidad](img/incidencia_duplicacion.png )
+![Incidencia de duplicación de identidad](img/incidencia_duplicacion.png)
 
 - Más del 70% de las mujeres reportó que los casos ocurrieron en los seis meses previos a la encuesta.
 
@@ -992,159 +992,65 @@ Posteriormente se muestra una tabla con otras aplicaciones reportadas por las v�
 
 #### Resultados para los casos de cibervigilancia (stalking)
 
-Se han reportado 166 casos de stalking,  de los cuales cerca del 70% indica haberlo sufrido más de 2 veces.
+Se han reportado 166 casos de stalking, de los cuales cerca del 70% indica haberlo sufrido más de 2 veces.
 
 ![Frecuencia de incidencia de stalking](img/incidencia_stalking.png)
 
+- De estos casos, un poco más del 59% de las mujeres reporta que la violencia no ocurrió en los últimos 6 meses.
 
+![Porcentaje de víctimas de stalking en los últimos 6 meses](img/6meses_stalking.png)
 
-```python
-frecuencia_stalking = fg.grafico_frecuencia(tbl_stalking)
-```
+- Alrededor del 27% de las mujeres que sufrieron stalking por primera vez eran menores a 25 años.
 
+![Rangos de edad de las víctimas de stalking por primera vez](img/edades_stalking.png)
 
-```python
-temporalidad_stalking = fg.grafico_temporalidad(tbl_stalking)
-```
+- El siguiente gráfico muestra el parentesco de las mujeres que sufrieron stalking con su agresor(a):
 
+![Parentesco de la víctima de stalking con la persona agresora](img/parentesco_stalking.png)
 
-```python
-edad_stalking = fg.grafico_edad(tbl_stalking)
-```
+Un poco más del 62% de las mujeres lograron identificar a la persona agresora.
 
+- _Alrededor del 91% de las mujeres fueron víctimas de un hombre_
 
-```python
-parentesco_stalking = fg.grafico_parentesco(tbl_stalking)
-```
+![Sexo de la persona agresora para stalking](img/sexo_stalking.png)
 
-```python
-sexo_stalking = fg.grafico_sexo_parentesco(tbl_stalking)
-```
+- Así como se observó para otros tipos de violencia, WhatsApp y Facebook fueron los medios más utilizados por los cuales las víctimas sufrieron de cibervigilancia. Seguido a estos se tienen las llamadas telefónicas.
 
+![Aplicaciones por las cuales se produjo stalking](img/medios_stalking.png)
 
-```python
-medios_stalking = fg.grafico_medios(tbl_stalking)[2]
-```
-
-
-```python
-pd.DataFrame(tbl_stalking.otraR_stalking.value_counts()).rename_axis(
-    index={"otraR_stalking": "Otras aplicaciones o redes sociales"}
-).rename(columns={"count": "N° de mujeres"})
-```
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>N° de mujeres</th>
-    </tr>
-    <tr>
-      <th>Otras aplicaciones o redes sociales</th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Skype</th>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>Washaop</th>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
+Una mujer reporta haber sufrido cibervigilancia a través de la aplicación Skype.
 
 
 #### Resultados para los casos de ciberextorsión
 
 
-Se han reportado 21 casos de ciberextorsión.
+Se han reportado 21 casos de ciberextorsión, para los cuales la mayoría (más del 65%) de las mujeres manifiesta haberlo sufrido en una ocasión.
 
+![Frecuencia de incidencia de ciberextorsión](img/incidencia_ciberextorsion.png)
 
-```python
-frecuencia_ciberextorsion = fg.grafico_frecuencia(tbl_ciberextorsion)
-```
+- En los casos encuestados cerca del 29% indica que la ciberextorsión ocurrió en los últimos seis meses.
 
+![Porcentaje de víctimas de ciberextorsion en los últimos 6 meses](img/6meses_ciberextorsion.png)
 
-```python
-temporalidad_ciberextorsion = fg.grafico_temporalidad(tbl_ciberextorsion)
-```
+- El siguiente gráfico muestra los rangos de edades que tenían las víctimas cuando sufrieron la violencia por primera vez:
 
-```python
-edad_ciberextorsion = fg.grafico_edad(tbl_ciberextorsion)
-```
+![Rangos de edad de las víctimas de ciberextorsion por primera vez](img/edades_ciberextorsion.png)
 
+Un poco más del 61% de las mujeres que sufrieron ciberextorsion, reportaron que tenían menos de 39 años.
 
+- Alrededor del 33% de las mujeres indica haber tenido una relación cercana con su agresor(amistad, pareja o ex-pareja).
 
-```python
-parentesco_ciberextorsion = fg.grafico_parentesco(tbl_ciberextorsion)
-```
+![Parentesco de la víctima de ciberextorsion con la persona agresora](img/parentesco_ciberextorsion.png)
 
+- _En más del 90% de los casos, la persona agresora fue un hombre_.
 
+![Sexo de la persona agresora para ciberextorsion](img/sexo_ciberextorsion.png)
 
-```python
-sexo_ciberextorsion = fg.grafico_sexo_parentesco(tbl_ciberextorsion)
-```
+- Nuevamente, WhatsApp y Facebook son las aplicaciones más frecuentes por las cuales las mujeres reportaron haber sufrido de ciberextorsion.
 
+![Aplicaciones por las cuales se produjo ciberextorsion](img/medios_ciberextorsion.png)
 
-```python
-medios_ciberextorsion = fg.grafico_medios(tbl_ciberextorsion)[2]
-```
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>N° de mujeres</th>
-    </tr>
-    <tr>
-      <th>Otras aplicaciones o redes sociales</th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Skype</th>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
+Una mujer indica haber sufrido ciberextorsion a través de la aplicación Skype.
 
 
 #### Resultados para los casos de grooming
