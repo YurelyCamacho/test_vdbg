@@ -1023,74 +1023,64 @@ Una mujer reporta haber sufrido cibervigilancia a través de la aplicación Skyp
 
 #### Resultados para los casos de ciberextorsión
 
-
-Se han reportado 21 casos de ciberextorsión, para los cuales la mayoría (más del 65%) de las mujeres manifiesta haberlo sufrido en una ocasión.
+Se han reportado 21 casos de ciberextorsión, de los cuales la mayoría (más del 65%) de las mujeres manifiesta haberlo sufrido en una ocasión.
 
 ![Frecuencia de incidencia de ciberextorsión](img/incidencia_ciberextorsion.png)
 
 - En los casos encuestados cerca del 29% indica que la ciberextorsión ocurrió en los últimos seis meses.
 
-![Porcentaje de víctimas de ciberextorsion en los últimos 6 meses](img/6meses_ciberextorsion.png)
+![Porcentaje de víctimas de ciberextorsión en los últimos 6 meses](img/6meses_ciberextorsion.png)
 
 - El siguiente gráfico muestra los rangos de edades que tenían las víctimas cuando sufrieron la violencia por primera vez:
 
-![Rangos de edad de las víctimas de ciberextorsion por primera vez](img/edades_ciberextorsion.png)
+![Rangos de edad de las víctimas de ciberextorsión por primera vez](img/edades_ciberextorsion.png)
 
-Un poco más del 61% de las mujeres que sufrieron ciberextorsion, reportaron que tenían menos de 39 años.
+Un poco más del 61% de las mujeres que sufrieron ciberextorsión, reportaron que tenían menos de 39 años.
 
 - Alrededor del 33% de las mujeres indica haber tenido una relación cercana con su agresor(amistad, pareja o ex-pareja).
 
-![Parentesco de la víctima de ciberextorsion con la persona agresora](img/parentesco_ciberextorsion.png)
+![Parentesco de la víctima de ciberextorsión con la persona agresora](img/parentesco_ciberextorsion.png)
 
 - _En más del 90% de los casos, la persona agresora fue un hombre_.
 
-![Sexo de la persona agresora para ciberextorsion](img/sexo_ciberextorsion.png)
+![Sexo de la persona agresora para ciberextorsión](img/sexo_ciberextorsion.png)
 
-- Nuevamente, WhatsApp y Facebook son las aplicaciones más frecuentes por las cuales las mujeres reportaron haber sufrido de ciberextorsion.
+- Nuevamente, WhatsApp y Facebook son las aplicaciones más frecuentes por las cuales las mujeres reportaron haber sufrido de ciberextorsión.
 
-![Aplicaciones por las cuales se produjo ciberextorsion](img/medios_ciberextorsion.png)
+![Aplicaciones por las cuales se produjo ciberextorsión](img/medios_ciberextorsion.png)
 
-Una mujer indica haber sufrido ciberextorsion a través de la aplicación Skype.
+Una mujer indica haber sufrido esta violencia a través de la aplicación Skype.
 
 
 #### Resultados para los casos de grooming
 
+Se han reportado 40 casos de grooming, de los cuales el 37.5% manifiesta haberlo sufrido más de una vez.
 
-Se han reportado 40 casos de grooming.
+![Frecuencia de incidencia de grooming](img/incidencia_grooming.png)
 
+- Solo en el 20% de los casos la violencia ocurrió en los últimos seis meses.
 
-```python
-frecuencia_grooming = fg.grafico_frecuencia(tbl_grooming)
-```
+![Porcentaje de víctimas de grooming en los últimos 6 meses](img/6meses_grooming.png)
 
+- A continuación se muestran los rangos de edades de las víctimas cuando sufrieron grooming por primera vez:
 
-```python
-temporalidad_grooming = fg.grafico_temporalidad(tbl_grooming)
-```
+![Rangos de edad de las víctimas de grooming por primera vez](img/edades_grooming.png)
 
+De los casos reportados, 20 mujeres manifiestan haber tenido menos de 25 años.
 
-```python
-edad_grooming = fg.grafico_edad(tbl_grooming)
-```
+- Por la naturaleza de la agresión, en este caso se preguntó si la víctima logró identificar al agresor(a).
 
+![Identificación de la persona agresora para grooming](img/identificacion_grooming.png)
 
+Solo 14 mujeres identificaron a la persona que las agredió y _en 13 de esos casos fue un hombre_.
 
-```python
-parentesco_grooming = fg.grafico_parentesco(tbl_grooming)
-```
+![Sexo de la persona agresora para grooming](img/sexo_grooming.png)
 
-```python
-sexo_grooming = fg.grafico_sexo_parentesco(tbl_grooming)
-```
+- Facebook seguido de Instagram, fueron las dos redes sociales más comunes a través de las cuales las mujeres sufrieron grooming.
 
+![Aplicaciones por las cuales se produjo grooming](img/medios_grooming.png)
 
-
-
-```python
-medios_grooming = fg.grafico_medios(tbl_grooming)[2]
-```
-
-
+La siguiente tabla muestra las respuestas a "Otras aplicaciones" por las cuales algunas mujeres reportan haber sufrido grooming:
 
 <div>
 <style scoped>
@@ -1153,80 +1143,34 @@ medios_grooming = fg.grafico_medios(tbl_grooming)[2]
 
 #### Resultados para los casos de phishing-vishing-smishing
 
+Se han reportado 78 víctimas de phishing-vishing-smishing y de ellos cerca del 62% indica haberlo sufrido en más de una ocasión.
 
+![Frecuencia de incidencia de phishing-vishing-smishing](img/incidencia_pvs.png)
 
-Se han reportado 78 casos de phishing-vishing-smishing.
+- En los últimos seis meses ocurrieron 40 de los casos reportados.
 
+![Porcentaje de víctimas de phishing-vishing-smishing en los últimos 6 meses](img/6meses_pvs.png)
 
-```python
-frecuencia_phishing_vs = fg.grafico_frecuencia(tbl_phishing_vs)
-```
+- Alrededor del 49% de las mujeres indican haber tenido entre 30 y 49 años cuando sufrieron phishing-vishing-smishing por primera vez:
 
+![Rangos de edad de las víctimas de phishing-vishing-smishing por primera vez](img/edades_pvs.png)
 
-```python
-temporalidad_phishing_vs = fg.grafico_temporalidad(tbl_phishing_vs)
-```
+- En este caso se preguntó si la víctima logró identificar al agresor(a).
 
+![Identificación de la persona agresora para phishing-vishing-smishing](img/identificacion_pvs.png)
 
-```python
-edad_phishing_vs = fg.grafico_edad(tbl_phishing_vs)
-```
+Solo 12 mujeres identificaron a la persona que las agredió y _en la mayoría de esos casos fue un hombre_.
 
+![Sexo de la persona agresora para phishing-vishing-smishing](img/sexo_pvs.png)
 
-```python
-parentesco_phishing_vs = fg.grafico_parentesco(tbl_phishing_vs)
-```
+Por la naturaleza de la violencia, se incluyó la opción "Un grupo de personas" como agresor.
 
-```python
-sexo_phishing_vs = fg.grafico_sexo_parentesco(tbl_phishing_vs)
-```
+- WhastApp y correo electrónico son las aplicaciones más frecuentes por las cuales las mujeres reportan haber sufrido esta violencia.
 
+![Aplicaciones por las cuales se produjo phishing-vishing-smishing](img/medios_pvs.png)
 
+Una mujer indica haber sufrido esta violencia por Messenger Live y otra a través de LinkedIn.
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>N° de mujeres</th>
-    </tr>
-    <tr>
-      <th>Otras aplicaciones o redes sociales</th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Messenger live</th>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>Linkedin</th>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
-
-
-```python
-medios_phishing_vs = fg.grafico_medios(tbl_phishing_vs)[2]
-```
 
 #### Resultados para los casos de trata de personas en línea
 
