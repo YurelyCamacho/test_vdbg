@@ -1000,7 +1000,7 @@ Se han reportado 166 casos de stalking, de los cuales cerca del 70% indica haber
 
 ![Porcentaje de víctimas de stalking en los últimos 6 meses](img/6meses_stalking.png)
 
-- Alrededor del 27% de las mujeres que sufrieron stalking por primera vez eran menores a 25 años.
+- Alrededor del 27% de las mujeres, cuando sufrieron stalking por primera vez eran menores a 25 años.
 
 ![Rangos de edad de las víctimas de stalking por primera vez](img/edades_stalking.png)
 
@@ -1175,267 +1175,117 @@ Una mujer indica haber sufrido esta violencia por Messenger Live y otra a travé
 #### Resultados para los casos de trata de personas en línea
 
 
-Se han reportado 39 casos de trata de personas en línea.
+Se han reportado 39 casos de trata de personas en línea de los cuales, alrededor del 49% indica haber sufrido la violencia en más de una ocasión.
 
+![Frecuencia de incidencia de trata de personas en línea](img/incidencia_trata.png)
 
-```python
-frecuencia_trata = fg.grafico_frecuencia(tbl_trata)
-```
+- 10 de las personas que sufrieron la violencia indican que ocurrió en los 6 meses previos.
 
+![Porcentaje de víctimas de trata de personas en línea en los últimos 6 meses](img/6meses_trata.png)
 
-```python
-temporalidad_trata = fg.grafico_temporalidad(tbl_trata)
-```
+- A continuación se muestran las edades que tenían las mujeres cuando sufrieron la violencia por primera vez:
 
+![Rangos de edad de las víctimas de trata de personas en línea por primera vez](img/edades_trata.png)
 
-```python
-edad_trata = fg.grafico_edad(tbl_trata)
-```
+28 de las 39 mujeres tenían entre 18 y 39 años de edad cuando fueron victimas de trata de personas en línea por primera vez.
 
+- Solo 4 mujeres lograron identificar al agresor(a). 
 
-```python
-parentesco_trata = fg.grafico_parentesco(tbl_trata)
-```
+![Identificación de la persona agresora para trata de personas](img/identificacion_trata.png)
 
+La mitad de las mujeres que lograron identificar a su victimario(a) indican que era un hombre.
 
+![Sexo de la persona agresora para trata de personas en línea](img/sexo_trata.png)
 
-```python
-sexo_trata = fg.grafico_sexo_parentesco(tbl_trata)
-```
+- Facebook es la aplicación más frecuente por la cual las mujeres reportan haber sufrido esta violencia.
 
+![Aplicaciones por las cuales se produjo trata de personas en línea](img/medios_trata.png)
 
-```python
-medios_trata = fg.grafico_medios(tbl_trata)[2]
-```
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>N° de mujeres</th>
-    </tr>
-    <tr>
-      <th>Otras aplicaciones o redes sociales</th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>badoo</th>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>Gmail</th>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
+Una mujer indica haber sufrido esta violencia por Badoo y otra a través de Gmail.
 
 
 #### Resultados para los casos de captación con fines de explotación sexual
 
 
-Se han reportado 7 casos de captación con fines de explotación sexual.
+Se han reportado 7 casos de captación con fines de explotación sexual y más del 85% de estos indica haberla sufrido más de una vez.
 
+![Frecuencia de incidencia de captación con fines de explotación sexual](img/incidencia_captacion.png)
 
-```python
-frecuencia_explotacion = fg.grafico_frecuencia(tbl_explotacion)
-```
+- 4 de las personas que sufrieron la violencia indican que ocurrió en los 6 meses previos.
 
-```python
-temporalidad_explotacion = fg.grafico_temporalidad(tbl_explotacion)
-```
+![Porcentaje de víctimas de captación con fines de explotación sexual en los últimos 6 meses](img/6meses_captacion.png)
 
+- Alrededor del 85% de las mujeres tenían entre 15 y 59 años de edad cuando sufrieron la violencia por primera vez:
 
+![Rangos de edad de las víctimas de captación con fines de explotación sexual por primera vez](img/edades_captacion.png)
 
-```python
-edad_explotacion = fg.grafico_edad(tbl_explotacion)
-```
+- 4 mujeres no lograron identificar al agresor(a) y dos de ellas indican que tenían una amistad o que fue un compañero(a) de trabajo.
 
-```python
-parentesco_explotacion = fg.grafico_parentesco(tbl_explotacion)
-```
+![Parentesco de la persona agresora para captación con fines de explotación sexual](img/parentesco_captacion.png)
 
+- Para captación con fines de explotación sexual todas las personas agresoras son de sexo Hombre
 
-```python
-sexo_explotacion = fg.grafico_sexo_parentesco(tbl_explotacion)
-```
+- Facebook es la aplicación más frecuente por la cual las mujeres reportan haber sufrido esta violencia.
 
-    Para captación con fines de explotación sexual todas las personas agresoras son de sexo Hombre
+![Aplicaciones por las cuales se produjo la captación con fines de explotación sexual](img/medios_captacion.png)
 
-
-
-```python
-medios_explotacion = fg.grafico_medios(tbl_explotacion)[2]
-```
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>N° de mujeres</th>
-    </tr>
-    <tr>
-      <th>Otras aplicaciones o redes sociales</th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Texto</th>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
+Una mujer indica haber sufrido esta violencia por mensaje de texto.
 
 
 #### Resultados para los casos de exclusión digital
 
 
-Se han reportado 37 casos de exclusión digital.
+Se han reportado 37 casos de exclusión digital, de los cuales 28 mujeres indican que ocurrió en más de 2 ocasiones.
 
+![Frecuencia de incidencia de exclusión digital](img/incidencia_exclusion.png)
 
-```python
-frecuencia_exclusion = fg.grafico_frecuencia(tbl_exclusion)
-```
+- De estos casos, 22 mujeres reportan que la violencia ocurrió en los últimos 6 meses.
 
+![Porcentaje de víctimas de exclusión digital en los últimos 6 meses](img/6meses_exclusion.png)
 
-```python
-temporalidad_exclusion = fg.grafico_temporalidad(tbl_exclusion)
-```
+- Alrededor del 65% de las mujeres cuando sufrieron exclusión digital por primera vez, eran menores a 39 años y una de ellas reporta haber tenido entre 10 y 14 años de edad.
 
+![Rangos de edad de las víctimas de exclusión digital por primera vez](img/edades_exclusion.png)
 
-```python
-edad_exclusion = fg.grafico_edad(tbl_exclusion)
-```
+En el caso de exclusión digital, debido a la naturaleza de la agresión no se realizaron las preguntas asociadas al parentesco y sexo de las personas agresoras.
 
+- Telegram es la aplicación por la cual la mayoría de las mujeres reportan haber sido excluidas, seguido de Facebook.
 
-En el caso de exclusión no se realizó la pregunta asociada las personas agresoras.
+![Aplicaciones por las cuales se produjo exclusión digital](img/medios_exclusion.png)
 
-
-```python
-medios_exclusion = fg.grafico_medios(tbl_exclusion)[2]
-```
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>N° de mujeres</th>
-    </tr>
-    <tr>
-      <th>Otras aplicaciones o redes sociales</th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Ninguna</th>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>ninguna</th>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>Telefónicamente</th>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>Telefonía local</th>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
+Dos mujeres indican haber sufrido la violencia por medio de la telefonía local.
 
 
 #### Resultados para los casos de cyberflashing
 
-``
+Se han reportado 190 casos de cyberflashing de los cuales 132 mujeres indican haber sufrido la violencia en más de una ocasión.
 
-Se han reportado 190 casos de cyberflashing.
+![Frecuencia de incidencia de cyberflashing](img/incidencia_cyberflashing.png)
 
+- 53 de las personas que sufrieron la violencia indican que ocurrió en los 6 meses previos a la encuesta.
 
-```python
-frecuencia_cyberflashing = fg.grafico_frecuencia(tbl_cyberflashing)
-```
+![Porcentaje de víctimas de cyberflashing en los últimos 6 meses](img/6meses_cyberflashing.png)
 
+- A continuación se muestran las edades que tenían las mujeres cuando sufrieron la violencia por primera vez:
 
-```python
-temporalidad_cyberflashing = fg.grafico_temporalidad(tbl_cyberflashing)
-```
+![Rangos de edad de las víctimas de cyberflashing por primera vez](img/edades_cyberflashing.png)
 
+138 de las 190 mujeres que reportan haber sufrido la violencia, tenían entre 18 y 49 años de edad cuando fueron victimas por primera vez.
 
-```python
-edad_cyberflashing = fg.grafico_edad(tbl_cyberflashing)
-```
+- Solo 38 mujeres indican que no conocían al agresor pero pudieron identificarlo. Asimismo, 55 mujeres indican que tenían una amistad con su agresor(a), mientras que 80 mujeres no pudieron identificar al agresor(a).
 
+![Identificación de la persona agresora para cyberflashing](img/identificacion_cyberflashing.png)
 
-```python
-parentesco_cyberflashing = fg.grafico_parentesco(tbl_cyberflashing)
-```
+_183 de las 190 mujeres indican haber sido víctimas de un hombre_
 
+![Sexo de la persona agresora para cyberflashing](img/sexo_cyberflashing.png)
 
+- WhatsApp y Facebook son las aplicaciones más frecuentes por las cualés las mujeres sufren de cyberflashing.
 
-```python
-sexo_cyberflashing = fg.grafico_sexo_parentesco(tbl_cyberflashing)
-```
+![Aplicaciones por las cuales se produjo cyberflashing](img/medios_cyberflashing.png)
 
+La siguiente tabla muestra información sobre Otras aplicaciones por las cuales las mujeres sufrieron la violencia. 
 
-```python
-medios_cyberflashing = fg.grafico_medios(tbl_cyberflashing)[2]
-```
 
 <div>
 <style scoped>
@@ -1472,7 +1322,7 @@ medios_cyberflashing = fg.grafico_medios(tbl_cyberflashing)[2]
       <td>1</td>
     </tr>
     <tr>
-      <th>O re uerdo</th>
+      <th>No recuerdo</th>
       <td>1</td>
     </tr>
     <tr>
@@ -1480,23 +1330,15 @@ medios_cyberflashing = fg.grafico_medios(tbl_cyberflashing)[2]
       <td>1</td>
     </tr>
     <tr>
-      <th>Messinger</th>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>chats online, skype</th>
-      <td>1</td>
+      <th>Messenger</th>
+      <td>3</td>
     </tr>
     <tr>
       <th>Skype, mensajes texto y el antiguo chat de Google "talk".</th>
-      <td>1</td>
+      <td>2</td>
     </tr>
     <tr>
       <th>YouTube red</th>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>messenger de MSN</th>
       <td>1</td>
     </tr>
     <tr>
@@ -1505,10 +1347,6 @@ medios_cyberflashing = fg.grafico_medios(tbl_cyberflashing)[2]
     </tr>
     <tr>
       <th>Mensaje de texto</th>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>Messenger</th>
       <td>1</td>
     </tr>
     <tr>
@@ -1523,193 +1361,70 @@ medios_cyberflashing = fg.grafico_medios(tbl_cyberflashing)[2]
 
 #### Resultados para los casos de deepfake
 
-Se han reportado 10 casos de deepfake.
+Se han reportado 10 casos de deepfake de los cuales 7 mujeres reportan que solo ocurrió una vez.
 
+![Frecuencia de incidencia de deepfake](img/incidencia_deepfake.png)
 
-```python
-frecuencia_deepfake = fg.grafico_frecuencia(tbl_deepfake)
-```
+- De estos casos, solo una mujer reporta que la violencia ocurrió en los últimos 6 meses.
 
+![Porcentaje de víctimas de deepfake en los últimos 6 meses](img/6meses_deepfake.png)
 
-```python
-edad_deepfake = fg.grafico_edad(tbl_deepfake)
-```
+- La mayoría de las mujeres (6) tenían entre 18 y 39 años de edad cuando sufrieron deepfake por primera vez.
 
+![Rangos de edad de las víctimas de deepfake por primera vez](img/edades_deepfake.png)
 
-```python
-parentesco_deepfake = fg.grafico_parentesco(tbl_deepfake)
-```
+- 3 mujeres reportan que no conocían a su agresor(a) pero que pudieron identificarlo y la misma cantidad indican que no lograron identificarle.
 
+![Identificación de la persona agresora para deepfake](img/identificacion_deepfake.png)
 
-```python
-sexo_deepfake = fg.grafico_sexo_parentesco(tbl_deepfake)
-```
+_7 de las 10 mujeres indican haber sido víctimas de un hombre_
 
-```python
-medios_deepfake = fg.grafico_medios(tbl_deepfake)[2]
-```
+![Sexo de la persona agresora para deepfake](img/sexo_deepfake.png)
 
+- Facebook y WhatsApp son las aplicaciones más frecuentes por las cuales las mujeres reportan hav¡ber sufrido deepfake.
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+![Aplicaciones por las cuales se produjo deepfake](img/medios_deepfake.png)
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>N° de mujeres</th>
-    </tr>
-    <tr>
-      <th>Otras aplicaciones o redes sociales</th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Messenger</th>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>BB pin</th>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
+Una mujer indica haber sufrido la violencia por Messenger y otra por BB PIN.
 
 
 #### Resultados para los casos de clonación de aplicaciones
 
 
-Se han reportado 50 casos de clonación de aplicaciones.
+Se han reportado 50 casos de clonación de aplicaciones y solo 12 de ellas indican haberla sufrido más de una vez.
 
+![Frecuencia de incidencia de clonación de aplicaciones](img/incidencia_clonacion.png)
 
-```python
-frecuencia_clonacion = fg.grafico_frecuencia(tbl_clonacion)
-```
+- 13 de las mujeres que sufrieron la violencia indican que ocurrió en los 6 meses previos.
 
+![Porcentaje de víctimas de clonación de aplicaciones en los últimos 6 meses](img/6meses_clonacion.png)
 
-```python
-temporalidad_clonacion = fg.grafico_temporalidad(tbl_clonacion)
-```
+- Alrededor del 68% de las mujeres tenían entre 30 y 59 años de edad cuando sufrieron la violencia por primera vez:
 
+![Rangos de edad de las víctimas de clonación de aplicaciones por primera vez](img/edades_clonacion.png)
 
-```python
-edad_clonacion = fg.grafico_edad(tbl_clonacion)
-```
+- 33 mujeres no lograron identificar al agresor(a), 4 indican que fue un compañero(a) de trabajo y 6 no conocían al agresor pero pudieron identificarlo.
 
+![Parentesco de la persona agresora para clonación de aplicaciones](img/parentesco_clonacion.png)
 
-```python
-parentesco_clonacion = fg.grafico_parentesco(tbl_clonacion)
-```
+- Para esta violencia, en 32 de los casos el agresor es un hombre.
 
+![Sexo de la persona agresora para clonación de aplicaciones](img/sexo_clonacion.png)
 
-```python
-sexo_clonacion = fg.grafico_sexo_parentesco(tbl_clonacion)
-```
+- Nuevamente FAcebook y WhatsApp son las aplicaciones más frecuentes por las cuales las mujeres reportan haber sufrido esta violencia.
 
+![Aplicaciones por las cuales se produjo la clonación de aplicaciones](img/medios_clonacion.png)
 
-
-```python
-medios_clonacion = fg.grafico_medios(tbl_clonacion)[2]
-```
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>N° de mujeres</th>
-    </tr>
-    <tr>
-      <th>Otras aplicaciones o redes sociales</th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Falsificaron mi firma</th>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>Messenger</th>
-      <td>1</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
+Una mujer indica haber sufrido esta violencia por Messenger y otra reporta que falsificaron su firma.
 
 
 ### Conocimiento sobre violencia digital basada en género
 
+- 264 mujeres afirman haber escuchado antes el término Violencia digital basada en género.
 
-```python
-tbl_vdbg = datos.vdbg.value_counts()
-```
+![Mujeres que escucharon el término VDBG](img/conoc_vdbg.png)
 
-
-```python
-fig = go.Figure(data=[go.Pie(labels=tbl_vdbg.index, values=tbl_vdbg)])
-fig.update_layout(
-    title_text="Conocimiento de VDBG",
-    legend_title="¿Habías escuchado antes el término <br> Violencia Digital Basada en Género?",
-    font=dict(family="Arial", size=18, color="black"),
-    width=1500,
-    height=1000,
-)
-fig.update_traces(
-    marker=dict(
-        colors=["rgb(149, 27, 129)", "rgb(57, 105, 172)", "rgb(7, 171, 157)"],
-        line=dict(color="white", width=1),
-    )
-)
-fig.show()
-fig.write_image("img/vdbg.png")
-```
-
-
-```python
-vdbg_violencias = [s for s in list(datos.columns) if "vdbg_" in s]
-```
-
-
-```python
-con_violencia = pd.DataFrame(
-    datos.query("vdbg == 'Sí'")[vdbg_violencias[1:]].T.sum().value_counts()
-)
-con_violencia.index.name = "Nº de violencias conocidas"
-con_violencia["%"] = round(con_violencia / len(datos) * 100, 2)
-con_violencia.rename(columns={"count": "Cantidad de mujeres"}).sort_index()
-```
-
-
+- A continuación se muestra una tabla con información sobre el número de violencias conocidas por las mujeres.
 
 
 <div>
@@ -1819,461 +1534,53 @@ con_violencia.rename(columns={"count": "Cantidad de mujeres"}).sort_index()
 </table>
 </div>
 
+- Los tipos de violencias más conocidas por las mujeres son la duplicación de identidad, seguida del ciberacoso y doxxing. POr su parte, las menos conocidas son el deepfake y la clonación de aplicaciones.
 
-
-
-```python
-tbl_conocimiento_violencia = pd.DataFrame(datos[vdbg_violencias[1:]].sum())
-```
-
-
-```python
-tbl_conocimiento_violencia.index = violencias
-tbl_conocimiento_violencia.rename(
-    index=violencias_nombres, columns={0: "cantidad"}, inplace=True
-)
-tbl_conocimiento_violencia = round(tbl_conocimiento_violencia / len(datos) * 100, 2)
-```
-
-
-```python
-fig = px.bar(
-    tbl_conocimiento_violencia.sort_values("cantidad", ascending=False),
-    y="cantidad",
-    x=tbl_conocimiento_violencia.index,
-    text_auto=True,
-)
-fig.update_layout(
-    title="Conocimiento de la violencia",
-    xaxis_title="Violencia",
-    yaxis_title="% de mujeres",
-    font=dict(
-        family="Arial",
-        size=18,
-        color="black",
-    ),
-    width=1500,
-    height=800,
-)
-fig.update_traces(
-    textfont_size=18,
-    textangle=0,
-    textposition="outside",
-    cliponaxis=False,
-    showlegend=False,
-    marker_color="rgb(149, 27, 129)",
-    marker_line_color="white",
-    texttemplate="%{value: .4} %",
-)
-fig.show()
-fig.write_image("img/conocimiento_violencia.png")
-```
+![Conocimiento según el tipo de violencia](img/conoc_tipov.png)
 
 ### Reacciones de las víctima al sufrir la(s) violencia(s)
 
+Las reacciones más frecuentes fueron bloquear al agresor(a), ignorarlo(a) y reportar el perfil o publicación en la red social.
 
-```python
-reacciones = [s for s in list(datos.columns) if "reaccion_" in s]
-```
-
-
-```python
-tbl_reacciones = round(pd.DataFrame(datos[reacciones].sum() / len(datos) * 100), 2)
-```
-
-
-```python
-fig = px.bar(
-    tbl_reacciones.sort_values("cantidad", ascending=False),
-    y=tbl_reacciones["cantidad"],
-    x=tbl_reacciones.index,
-    text_auto=True,
-)
-fig.update_layout(
-    title="Reacción de la víctima al sufrir la(s) violencia(s)",
-    xaxis_title="Violencia",
-    yaxis_title="% de mujeres",
-    font=dict(
-        family="Arial",
-        size=18,
-        color="black",
-    ),
-    width=1500,
-    height=800,
-)
-fig.update_traces(
-    textfont_size=18,
-    textangle=0,
-    textposition="outside",
-    cliponaxis=False,
-    showlegend=False,
-    marker_color="rgb(57, 105, 172)",
-    marker_line_color="white",
-    texttemplate="%{value: .4} %",
-)
-fig.show()
-fig.write_image("img/reaccion_violencia.png")
-```
+![Reacciones de las víctimas](img/reacciones.png)
 
 
 ### Conocimiento de víctimas
 
+226 mujeres afirman que conocen a otras mujeres que han sido víctimas de alguna violencia digital.
 
-```python
-tbl_victima = datos.victima.value_counts()
-```
+![Conocimiento de víctimas](img/conoc_victimas.png)
 
+79 de ellas indican conocer entre 2 y 4 mujeres que también han sufrido alguna violencia.
 
-```python
-fig = go.Figure(data=[go.Pie(labels=tbl_victima.index, values=tbl_victima)])
-fig.update_layout(
-    title_text="Conocimiento de Víctimas",
-    font=dict(family="Arial", size=18, color="black"),
-    legend_title="¿Conoces a alguna mujer que haya <br> sido víctima de violencia digital?",
-    width=1500,
-    height=1000,
-    legend=dict(font=dict(size=18)),
-)
-fig.update_traces(
-    marker=dict(
-        colors=["rgb(149, 27, 129)", "rgb(57, 105, 172)"],
-        line=dict(color="white", width=1),
-    )
-)
-fig.show()
-fig.write_image("img/victima.png")
-```
-
-
-```python
-num_victimas = pd.DataFrame(datos.numero_victima.value_counts())
-```
-
-
-```python
-fig = px.bar(
-    num_victimas.sort_index(),
-    y=num_victimas.sort_index()["count"],
-    x=num_victimas.sort_index().index.values,
-    text=round(num_victimas.sort_index() / len(datos) * 100, 2)["count"],
-)
-fig.update_layout(
-    title="Cantidad de víctimas conocidas",
-    xaxis_title="Nº de victimas",
-    yaxis_title="% de mujeres",
-    font=dict(
-        family="Arial",
-        size=18,
-        color="black",
-    ),
-    width=1500,
-    height=800,
-)
-fig.update_traces(
-    textfont_size=18,
-    textangle=0,
-    textposition="outside",
-    cliponaxis=False,
-    showlegend=False,
-    marker_color="rgb(7, 171, 157)",
-    marker_line_color="white",
-    texttemplate="%{text: .4} %",
-)
-fig.show()
-fig.write_image("img/num_victimas.png")
-```
+![Cantidad de victimas conocidas](img/cantidad_victimas.png)
 
 ### Conocimiento de leyes y normas
 
+De las mujeres encuestadas, solo 67 indican no conocer leyes o normativas en el país que regulen el tema de Violencias digitales basadas en género.
 
-```python
-tbl_leyes = datos.leyes_normas.value_counts()
-```
-
-
-```python
-fig = go.Figure(data=[go.Pie(labels=tbl_leyes.index, values=tbl_leyes)])
-fig.update_layout(
-    title_text="Conocimiento de Leyes y Normas",
-    legend_title="¿Conoces leyes o normativas en el país <br> que contemplan las violencias digitales?",
-    width=1500,
-    height=1000,
-    font=dict(family="Arial", size=18, color="black"),
-)
-fig.update_traces(
-    marker=dict(
-        colors=["rgb(149, 27, 129)", "rgb(57, 105, 172)"],
-        line=dict(color="white", width=1),
-    )
-)
-fig.show()
-fig.write_image("img/ley.png")
-```
-
-
+![Conocimiento de leyes](img/leyes.png)
 
 ### Interacciones entre ciertos ítems de la encuesta
 
 #### Tipos de violencia y edad en que ocurrió por primera vez
 
 
-```python
-edades_violencias = [s for s in list(datos.columns) if "edad_" in s]
-```
 
-
-```python
-lista_edades_violencias = []
-for i in edades_violencias:
-    j = (
-        pd.cut(
-            datos[edades_violencias].loc[:, i],
-            bins=[0, 10, 15, 18, 25, 30, 40, 50, 60, 75],
-            right=False,
-        )
-        .value_counts()
-        .sort_index()
-    )
-    j = j.reset_index()
-    for k in violencias_nombres.keys():
-        if k in j.columns[0]:
-            j["violencia"] = [violencias_nombres[k]] * len(j)
-    j = j.rename(columns={j.columns[0]: "Edad"})
-    lista_edades_violencias.append(j)
-```
-
-
-```python
-tbl_edades_primera_vez = pd.concat(lista_edades_violencias, join="inner").reset_index(
-    drop=True
-)
-```
-
-
-```python
-tbl_edades_primera_vez.Edad = tbl_edades_primera_vez.Edad.astype("str")
-```
-
-
-```python
-l_ = []
-for i in lista_edades_violencias:
-    j = round(i["count"] / i["count"].sum() * 100, 3)
-    i["count"] = j
-    l_.append(i)
-```
-
-
-```python
-edades_primera_vez = (
-    pd.concat(l_, join="inner")
-    .reset_index(drop=True)
-    .rename(columns={"violencia": "Violencia"})
-)
-```
-
-
-```python
-edades_primera_vez.Edad = edades_primera_vez.Edad.astype("str")
-```
-
-
-```python
-fig = px.bar(
-    edades_primera_vez,
-    x="Edad",
-    y="count",
-    color="Violencia",
     title="Tasa de incidencia por grupo etario según tipo de violencia",
-    barmode="group",
-    color_discrete_sequence=px.colors.qualitative.Plotly,
-    width=1600,
-    height=600,
-)
-fig.update_layout(
-    font=dict(family="Arial", size=16, color="black"),
-)
-fig.update_yaxes(title="% de mujeres")
-fig.update_xaxes(
-    title="Rangos de edad",
-    labelalias={
-        "[0, 10)": "0-9",
-        "[10, 15)": "10-14",
-        "[15, 18)": "15-17",
-        "[18, 25)": "18-24",
-        "[25, 30)": "24-29",
-        "[30, 40)": "30-39",
-        "[40, 50)": "40-49",
-        "[50, 60)": "50-59",
-        "[60, 75)": "60 y más",
-    },
-)
-fig.show()
-fig.write_image("img/violencia_edad2.png")
-```
+
 
 #### Tipo de violencia según el medio por el cual ocurrió
 
 
-```python
-lista_medios = [s for s in list(vars()) if "medios_" in s]
-ls_medios = []
-for i in [s for s in list(vars()) if "medios_" in s]:
-    df = vars()[i]
-    ls_medios.append(df)
-```
-
-
-```python
-lista_df_medios = []
-for df, i in zip(ls_medios, lista_medios):
-    tbl = pd.DataFrame(df)
-    if i.split("_")[1] in violencias_nombres.keys():
-        l_violencia = [violencias_nombres[i.split("_")[1]]] * len(df)
-    else:
-        l_violencia = ["Phishing/Vishing/Smishing"] * len(df)
-    tbl["violencia"] = l_violencia
-    tbl.rename(columns={0: "cantidad"}, inplace=True)
-    tbl.reset_index(inplace=True)
-    tbl.rename(columns={"index": "Medio"}, inplace=True)
-    lista_df_medios.append(tbl)
-```
-
-
-```python
-tbl_violencia_medio = pd.concat(lista_df_medios)
-```
-
-
-```python
-tbl_violencia_medio.reset_index(drop=True, inplace=True)
-```
-
-
-```python
-tbl_violencia_medio = tbl_violencia_medio.astype(
-    {"cantidad": "float", "violencia": "str", "Medio": "str"}
-)
-```
-
-
-```python
-fig = px.bar(
-    tbl_violencia_medio.sort_values("cantidad", ascending=False),
-    x="cantidad",
-    y="violencia",
-    color="Medio",
-    title="Tipo de violencia según el medio por el cual ocurrió",
-    barmode="stack",
-    orientation="h",
-    color_discrete_sequence=px.colors.qualitative.Bold,
-    width=1600,
-    height=600,
-)
-fig.update_layout(
-    font=dict(family="Arial", size=16, color="black"),
-)
-fig.update_yaxes(title="Violencia")
-fig.update_xaxes(title="% de mujeres")
-fig.show()
-fig.write_image("img/violencia_medio1.png")
-```
-
 #### Parentesco de la persona agresora con las mujeres que han sufrido violencias
 
 
-```python
-lista_df_parentescos = [
-    parentesco_identidad[2],
-    parentesco_ciberacoso[2],
-    parentesco_doxxing[2],
-    parentesco_ciberdifamacion[2],
-    parentesco_stalking[2],
-    parentesco_ciberextorsion[2],
-    parentesco_explotacion[2],
-    parentesco_cyberflashing[2],
-    parentesco_deepfake[2],
-    parentesco_clonacion[2],
-]
-```
 
-
-```python
-parentescos_ = [
-    "identidad",
-    "ciberacoso",
-    "doxxing",
-    "ciberdifamacion",
-    "stalking",
-    "ciberextorsion",
-    "explotacion",
-    "cyberflashing",
-    "deepfake",
-    "clonacion",
-]
-```
-
-
-```python
-for i, j in zip(lista_df_parentescos, parentescos_):
-    if j in violencias_nombres.keys():
-        ls_index = [violencias_nombres[j]] * len(i)
-    i["violencia"] = ls_index
-```
-
-
-```python
-tbl_parentesco_ = pd.concat(lista_df_parentescos)
-```
-
-
-```python
-tbl_parentesco_.reset_index(inplace=True)
-```
-
-
-```python
-fig = px.bar(
-    tbl_parentesco_,
-    x="violencia",
-    y="count",
-    color="parentesco",
+¡
     title="Parentesco de la persona agresora con las mujeres que han sufrido violencias",
-    barmode="group",
-    color_discrete_sequence=px.colors.qualitative.Plotly,
-    width=1500,
-    height=1000,
-)
-fig.update_layout(
-    legend_title="Parentesco con el agresor(a):",
-    font=dict(family="Arial", size=18, color="black"),
-)
-fig.update_xaxes(title="Violencia")
-fig.update_yaxes(title="% de mujeres")
-fig.show()
-fig.write_image("img/violencia_parentesco1.png")
-```
-
-
-
-NOTA: Para las siguientes violencias, la pregunta sobre parentesco se reformuló consultando si se logró o no identificar al agresor(a).
-
-
-```python
-parentesco_violencia = tbl_parentesco_.pivot(
-    index="violencia", columns="parentesco", values="count"
-).fillna(0)
-```
-
-
-```python
-tbl_grooPt = pd.concat(
-    [parentesco_grooming[2], parentesco_phishing_vs[2], parentesco_trata[2]],
-    axis=1,
-    keys=["Grooming", "Phishing", "Trata"],
-).T.reset_index(level=1, drop=True)
-tbl_grooPt
-```
+  
+  NOTA: Para las siguientes violencias, la pregunta sobre parentesco se reformuló consultando si se logró o no identificar al agresor(a).
 
 
 
@@ -2325,19 +1632,6 @@ tbl_grooPt
 NOTA: Para mobbing, por la naturaleza de la agresión, la víctima conoce a su agresor(a).
 
 
-```python
-tbl_parentesco_mobbing = parentesco_mobbing[1]
-```
-
-
-```python
-tbl_parentesco_mobbing.astype({"count": "int"}).rename_axis(
-    index={"parentesco_mobbing": "Relación laboral"}
-).rename(columns={"count": "N° de mujeres"})
-```
-
-
-
 
 <div>
 <style scoped>
@@ -2386,609 +1680,33 @@ tbl_parentesco_mobbing.astype({"count": "int"}).rename_axis(
 #### Identificación de la persona agresora
 
 
-```python
-tbl_identificacion_si = pd.DataFrame(
-    parentesco_violencia[
-        [
-            "Fue mi ex-pareja en ese momento",
-            "Fue mi pareja",
-            "Fue un compañero(a) de trabajo",
-            "Fue un familiar",
-            "No conocía a quien me agredió, pero le identifiqué",
-            "Teníamos una amistad",
-        ]
-    ].sum(1)
-).rename(columns={0: "Sí"})
-```
 
-
-```python
-tbl_identificacion_no = pd.DataFrame(
-    parentesco_violencia["No le pude identificar"]
-).rename(columns={"No le pude identificar": "No"})
-```
-
-
-```python
-tabla_identificacion = pd.concat(
-    [tbl_identificacion_si.join(tbl_identificacion_no), tbl_grooPt]
-)
-```
-
-
-```python
-porcentaje_identificacion = round(
-    (tabla_identificacion.T / tabla_identificacion.sum(1) * 100).T, 2
-)
-```
-
-
-```python
-fig = px.bar(
-    porcentaje_identificacion,
-    barmode="group",
-    text_auto="True",
-    color_discrete_map={"Sí": "rgb(149, 27, 129)", "No": "rgb(57, 105, 172)"},
-    width=1500,
-    height=1000,
-)
-fig.update_layout(
-    title="Identificación del agresor",
-    xaxis_title="Violencia",
-    yaxis_title="% de mujeres",
-    legend_title="¿Identificó al agresor?",
-    font=dict(
-        family="Arial",
-        size=18,
-        color="black",
-    ),
-)
-fig.update_traces(
-    textfont_size=18,
-    textangle=0,
-    textposition="outside",
-    cliponaxis=False,
-    texttemplate="%{value} %",
-)
-
-fig.show()
-fig.write_image("img/id_agresor.png")
-```
 
 #### Sexo del agresor por tipo de violencia
 
 
-```python
-variables_sexo = [
-    "sexo_identidad",
-    "sexo_ciberacoso",
-    "sexo_doxxing",
-    "sexo_mobbing",
-    "sexo_ciberdifamacion",
-    "sexo_stalking",
-    "sexo_ciberextorsion",
-    "sexo_grooming",
-    "sexo_phishing_vs",
-    "sexo_trata",
-    "sexo_explotacion",
-    "sexo_cyberflashing",
-    "sexo_deepfake",
-    "sexo_clonacion",
-    "sexo_violencias",
-]
-```
-
-
-```python
-sexo_violencias = []
-names_ = []
-for i in variables_sexo:
-    df = vars()[i]
-    names_.append(df[1].index.name.split)
-    sexo_violencias.append(df[1])
-```
-
-
-```python
-tbl_sexo_violencias = (
-    pd.concat(
-        sexo_violencias,
-        join="outer",
-        axis=1,
-        keys=[
-            "Duplicación de identidad",
-            "Ciberacoso",
-            "Doxxing",
-            "Mobbing",
-            "Ciberdifamación",
-            "Cibervigilancia (stalking)",
-            "Ciberextorsión",
-            "Grooming",
-            "Phishing/Vishing/Smishing",
-            "Trata de personas en línea",
-            "Captación con fines de explotación sexual",
-            "Cyberflashing",
-            "Deepfake",
-            "Clonación",
-        ],
-    )
-    .T.reset_index(1, drop=True)
-    .fillna(0)
-)
-```
-
-
-```python
-sexo_porcentaje = round((tbl_sexo_violencias.T / tbl_sexo_violencias.sum(1) * 100).T, 2)
-```
-
-
-```python
-fig = px.bar(
-    sexo_porcentaje,
-    barmode="group",
-    color_discrete_sequence=[
-        "rgb(149, 27, 129)",
-        "rgb(57, 105, 172)",
-        "rgb(7, 171, 157)",
-    ],
-    width=1500,
-    height=1000,
-    text_auto=True,
-)
-fig.update_layout(
-    title="Sexo del agresor por tipo de violencia",
-    xaxis_title="Violencia",
-    yaxis_title="% de mujeres",
-    legend_title="Sexo del agresor(a)",
-    font=dict(
-        family="Arial",
-        size=18,
-        color="black",
-    ),
-)
-fig.update_traces(
-    textfont_size=18,
-    textangle=0,
-    textposition="outside",
-    cliponaxis=False,
-    texttemplate="%{value: } %",
-)
-
-fig.show()
-fig.write_image("img/sexo_agresor_violencia.png")
-```
-
-```python
-cruce = porcentaje_identificacion.join(sexo_porcentaje)
-```
-
-
-```python
-cruce.columns = pd.MultiIndex.from_tuples(
-    [
-        ("Sí", "%"),
-        ("No", "%"),
-        ("Sí", "Mujer"),
-        ("Sí", "Hombre"),
-        ("Sí", "Un grupo de personas"),
-    ]
-)
-```
-
-
-```python
-variables = [
-    s
-    for s in tbl_identidad.columns
-    if s.startswith("sexo_") or s.startswith("parentesco_")
-]
-```
-
-
-```python
-lista = []
-for j, k in zip(tbl_identidad[variables[0]], tbl_identidad[variables[1]]):
-    if j != "No le pude identificar" and j != "No":
-        lista.append((j, k))
-df = pd.DataFrame(lista, columns=["Parentesco", "Sexo"]).value_counts()
-```
-
-
-```python
-dic_sexo = {}
-for i in [s for s in violencias if s != "exclusion"]:
-    lista = []
-    g = datos.query(f"{i} == 1")
-    for j, k in zip(g[dic_violencias[i][4]], g[dic_violencias[i][5]]):
-        if j != "No le pude identificar" and j != "No":
-            lista.append((j, k))
-    dic_sexo[i] = pd.DataFrame(lista, columns=["Parentesco", "Sexo"]).value_counts()
-```
-
-
-```python
-for i in [s for s in violencias if s != "exclusion"]:
-    lista = []
-    g = datos.query(f"{i} == 1")
-    for j, k in zip(g[dic_violencias[i][4]], g[dic_violencias[i][5]]):
-        if j != "No le pude identificar" and j != "No":
-            lista.append((j, k))
-    dic_sexo[i] = pd.DataFrame(lista, columns=["Parentesco", "Sexo"]).value_counts()
-```
 
 #### Sexo del agresor(a) y parentesco con la víctima por tipo de violencia
 
 
-```python
-dic_sexo = {}
-for i in [s for s in violencias if s != "exclusion"]:
-    lista = []
-    g = datos.query(f"{i} == 1")
-    for j, k in zip(g[dic_violencias[i][4]], g[dic_violencias[i][5]]):
-        if j != "No le pude identificar" and j != "No":
-            lista.append((i, j, k))
-    dic_sexo[i] = pd.DataFrame(
-        lista, columns=["Violencia", "Parentesco", "Sexo"]
-    ).value_counts()
-```
-
-
-```python
-lista_sexo = [
-    dic_sexo[i].reset_index(level=0, drop=True)
-    for i in dic_sexo
-    if i
-    in [
-        "identidad",
-        "ciberacoso",
-        "doxxing",
-        "ciberdifamacion",
-        "stalking",
-        "ciberextorsion",
-        "explotacion",
-        "cyberflashing",
-        "deepfake",
-        "clonacion",
-    ]
-]
-```
-
-
-```python
-lista_parentesco_sexo = [
-    round(dic_sexo[i] / dic_sexo[i].sum() * 100, 2).reset_index()
-    for i in dic_sexo
-    if i
-    in [
-        "identidad",
-        "ciberacoso",
-        "doxxing",
-        "ciberdifamacion",
-        "stalking",
-        "ciberextorsion",
-        "explotacion",
-        "cyberflashing",
-        "deepfake",
-        "clonacion",
-    ]
-]
-```
-
-
-```python
-porcentaje_parentesco_sexo = pd.concat(lista_parentesco_sexo)
-```
-
-
-```python
-porcentaje_parentesco_sexo.Violencia.replace(violencias_nombres, inplace=True)
-```
-
-
-```python
-porcentaje_parentesco_sexo.reset_index(drop=True, inplace=True)
-```
-
-
-```python
-fig = px.bar(
-    porcentaje_parentesco_sexo,
-    x="Parentesco",
-    y="count",
-    color="Sexo",
-    barmode="group",
-    facet_col="Violencia",
-    facet_col_wrap=2,
-    color_discrete_map={"Mujer": "rgb(149, 27, 129)", "Hombre": "rgb(57, 105, 172)"},
-    width=1000,
-    height=1500,
-    text_auto=True,
-)
-fig.update_layout(
-    title="Sexo del agresor(a) y parentesco con la víctima por tipo de violencia",
-    legend_title="Sexo del agresor(a)",
-    font=dict(
-        family="Arial",
-        size=14,
-        color="black",
-    ),
-)
-fig.update_traces(
-    textfont_size=18,
-    textangle=0,
-    textposition="outside",
-    cliponaxis=False,
-    texttemplate="%{value} %",
-)
-fig.for_each_annotation(lambda a: a.update(text=a.text.split("=")[-1]))
-fig.for_each_yaxis(lambda y: y.update(title=""))
-fig.add_annotation(
-    x=-0.07,
-    y=0.5,
-    text="% de incidencias",
-    textangle=-90,
-    xref="paper",
-    yref="paper",
-)
-fig.show()
-fig.write_image("img/violencia_parentesco_sexo.png")
-```
-
-```python
-tbl_parentesco_sexo = (
-    pd.concat(
-        lista_sexo,
-        join="outer",
-        keys=[
-            "identidad",
-            "ciberacoso",
-            "doxxing",
-            "ciberdifamacion",
-            "stalking",
-            "ciberextorsion",
-            "explotacion",
-            "cyberflashing",
-            "deepfake",
-            "clonacion",
-        ],
-        axis=1,
-    )
-    .fillna(0)
-    .sort_index(level=0)
-    .T
-)
-```
 
 #### Sexo del agresor(a) y parentesco con la víctima por tipo de violencia: individual
-
-
-```python
-sp_df = []
-for i in lista_parentesco_sexo:
-    df = i.pivot(index="Parentesco", columns="Sexo", values="count").fillna(0)
-    df.Hombre = df.Hombre * -1
-    sp_df.append(df)
-```
-
-
-```python
-for i, j in zip(sp_df, lista_parentesco_sexo):
-    v = j.Violencia[1]
-    if len(i.columns) < 2:
-        print(v, "Son solo hombres")
-    else:
-        if v in violencias_nombres.keys():
-            # Creating instance of the figure
-            fig = go.Figure()
-
-            # Adding Male data to the figure
-            fig.add_trace(
-                go.Bar(
-                    y=i.index,
-                    x=i.Hombre,
-                    name="Hombre",
-                    orientation="h",
-                    text=-1 * i.Hombre.values.astype("float"),
-                    marker_color="rgb(57, 105, 172)",
-                )
-            )
-
-            # Adding Female data to the figure
-            fig.add_trace(
-                go.Bar(
-                    y=i.index,
-                    x=i.Mujer,
-                    name="Mujer",
-                    orientation="h",
-                    text=i.Mujer,
-                    marker_color="rgb(149, 27, 129)",
-                )
-            )
-
-            # Updating the layout for our graph
-            fig.update_layout(
-                title=" ".join(
-                    [
-                        "Sexo del agresor(a) y parentesco con la víctima de",
-                        violencias_nombres[v].casefold(),
-                    ]
-                ),
-                legend_title="Sexo del agresor",
-                title_font_size=22,
-                barmode="relative",
-                bargap=0.0,
-                bargroupgap=0.5,
-                xaxis=dict(
-                    title="% de Mujeres",
-                    title_font_size=14,
-                    tickvals=[-100, -50, 0, 0, 50, 100],
-                    ticktext=["100", "50", "0", "0", "50", "100"],
-                ),
-                width=1500,
-                height=600,
-                margin=dict(l=30),
-                font=dict(
-                    family="Arial",
-                    size=18,
-                    color="black",
-                ),
-            )
-            fig.update_traces(
-                textfont_size=10,
-                textangle=0,
-                textposition="outside",
-                cliponaxis=False,
-                texttemplate="%{text: 4}%",
-            )
-            fig.show()
-            fig.write_image("".join(["img/piramide_", v, ".png"]))
-```
 
 
     explotacion Son solo hombres
 
 
-```python
-veces_violencias = [s for s in list(datos.columns) if "veces_" in s]
-```
-
-
-```python
-violencias_6 = [s for s in list(datos.columns) if "6_" in s]
-```
-
-
-```python
-r_inf = []
-r_sup = []
-for i in datos["edad"]:
-    if i == "Más de 60":
-        r_inf.append(60)
-        r_sup.append(100)
-    else:
-        r_inf.append(int(i.split("-")[0]))
-        r_sup.append(int(i.split("-")[1]))
-```
 
 #### Violencias por ocupación
 
 
-```python
-dict_violencias_ocupaciones = {}
-for i in violencias:
-    df = datos.query(f"{i} == 1 and ocupacion != 'Otra'")["ocupacion"].value_counts()
-    df = round(df[:10] / df.sum() * 100, 2)
-    dict_violencias_ocupaciones[violencias_nombres[i]] = df
-```
-
-
-```python
-tbl_vo = pd.DataFrame.from_dict(dict_violencias_ocupaciones, orient="index").fillna(0)
-```
-
-
-```python
-fig = px.bar(
-    tbl_vo.sort_values("Abogado(a)"),
-    orientation="h",
-    color_discrete_sequence=px.colors.qualitative.Bold,
-    width=1500,
-    height=800,
-)
-fig.update_layout(
-    title="Ocupaciones más frecuentes por violencia sufrida",
-    xaxis_title="% de mujeres",
-    yaxis_title="Violencia",
-    legend_title="Ocupaciones",
-    font=dict(
-        family="Arial",
-        size=18,
-        color="black",
-    ),
-)
-
-fig.show()
-fig.write_image("img/violencia_ocupacion.png")
-```
+    title="Ocupaciones más frecuentes por violencia sufrida"
 
 
 #### Violencias por estados
 
 
-```python
-for i in violencias:
-    df_ = datos.query(f"{i} == 1")["estado"].value_counts()
-    df = df_ / df_.sum() * 100
-
-    lista_valores = []
-    for j in df_mapa.ESTADO:
-        if j in df.index:
-            lista_valores.append(df.loc[j])
-        else:
-            lista_valores.append(0)
-    df_mapa[violencias_nombres[i]] = lista_valores
-```
-
-
-```python
-tbl_violencia_estado = df_mapa.drop(columns="Mujeres")
-```
-
-
-```python
-tbl_ve = (
-    pd.melt(
-        tbl_violencia_estado,
-        id_vars=["ESTADO"],
-        value_vars=[violencias_nombres[s] for s in violencias_nombres.keys()],
-        var_name="violencia",
-        value_name="porcentaje",
-    )
-    .pivot(index="violencia", columns="ESTADO", values="porcentaje")
-    .sort_index(axis=0)
-)
-```
-
-
-```python
-fig = px.bar(
-    tbl_ve.sort_index(axis=1),
-    orientation="h",
-    color_discrete_sequence=px.colors.qualitative.Bold,
-    width=1500,
-    height=800,
-)
-fig.update_layout(
-    title="Ubicación de las víctimas por violencia sufrida",
-    xaxis_title="% de mujeres",
-    yaxis_title="Violencia",
-    legend_title="Estado",
-    font=dict(
-        family="Arial",
-        size=18,
-        color="black",
-    ),
-)
-
-fig.show()
-fig.write_image("img/violencia_estado.png")
-```
-
-
-
 #### Promedio de incidencias
-
-
-```python
-round(
-    (tbl_numero_violencia.index * tbl_numero_violencia["count"]).sum()
-    / tbl_numero_violencia.sum().iloc[0],
-    3,
-)
-```
-
-
 
 
     2.697
@@ -3000,152 +1718,13 @@ En promedio una mujer es víctima de 3 violencias.
 #### Cantidad de veces en que la víctima reporta haber sufrido la violencia
 
 
-```python
-repeticiones = []
-for j in [i for i in list(vars().keys()) if "frecuencia_" in i]:
-    df = vars()[j][2].rename(columns={"count": fg.violencias_names[j.split("_")[1]]})
-    df.rename(index={"Sólo una vez": "Solo una vez"}, inplace=True)
-    repeticiones.append(df)
-```
 
+#### Patrón de uso de aplicaciones por tipo de violencias y medio más frecuente por el que ocurrió
 
-```python
-tbl_repeticiones = pd.concat(repeticiones, axis=1).fillna(0).T
-```
-
-
-```python
-fig = px.bar(
-    tbl_repeticiones.sort_values("Solo una vez"),
-    orientation="h",
-    color_discrete_sequence=px.colors.qualitative.Bold,
-    width=1500,
-    height=800,
-)
-fig.update_layout(
-    title="Cantidad de veces que la víctima reporta haber sufrido la violencia",
-    xaxis_title="% de mujeres",
-    yaxis_title="Violencia",
-    legend_title="Frecuencias",
-    font=dict(
-        family="Arial",
-        size=14,
-        color="black",
-    ),
-)
-fig.update_traces(
-    textfont_size=18,
-    textangle=0,
-    cliponaxis=False,
-    marker_line_color="white",
-    texttemplate="%{value: 4} %",
-)
-fig.show()
-fig.write_image("img/repeticiones_violencia.png")
-```
-
-#### Patrón de uso de aplicaciones por tipo de violencias y según medio más frecuente por el que ocurrió
-
-
-```python
-dict_medios_medios = {}
-medio_frecuente = []
-for i in violencias:
-    df = datos.query(f"{i} == 1")
-    variable = [s for s in df.columns if "".join(["medio_", i]) in s]
-    start_cols = list(range(23, 40))
-    var_idx = df.columns.get_loc(variable[0])
-    end_col = df.columns.get_loc("".join(["otraR_", i]))
-
-    # concatenar rangos de columnas con np.r_[]
-    col_range = np.r_[start_cols, var_idx + 1 : end_col]
-
-    # seleccionar las columnas del DataFrame
-    info = df.iloc[:, col_range]
-
-    # Cálculo del valor máximo en el medio de la violencia
-    medio_mas_freq = info.loc[:, "".join(["twitter_", i]) :].sum().astype(int).idxmax()
-    medio_frecuente.append(medio_mas_freq.split("_")[0])
-
-    df_medios = info.query(f"{medio_mas_freq} == 1")[redes]
-
-    dicts = {}
-    for red_app in redes:
-        dicts[red_app.capitalize()] = (
-            df_medios[[red_app]]
-            .value_counts()
-            .reset_index()
-            .set_index(red_app)["count"]
-        )
-
-    aplicaciones = pd.DataFrame.from_dict(dicts, orient="index").fillna(0)[
-        [
-            "Menos de 2 horas",
-            "2-4 horas",
-            "5-7 horas",
-            "Más de 7 horas",
-            "No la utilizo",
-        ]
-    ]
-
-    dict_medios_medios[violencias_nombres[i]] = round(aplicaciones / len(df) * 100, 2)
-```
-
-
-```python
-for i, j in zip(dict_medios_medios.keys(), medio_frecuente):
-    fig = px.bar(
-        dict_medios_medios[i].sort_values("No la utilizo"),
-        orientation="v",
-        barmode="group",
-        color_discrete_sequence=px.colors.qualitative.Bold,
-        width=1500,
-        height=800,
-    )
-    fig.update_layout(
-        title=f"Patrón de uso de aplicaciones para {i.casefold()} sufrida por {j} ",
-        yaxis_title="% de mujeres",
-        xaxis_title="Aplicación o red social",
-        legend_title="Frecuencia de uso",
-        font=dict(
-            family="Arial",
-            size=18,
-            color="black",
-        ),
-    )
-    fig.update_traces(
-        textfont_size=18,
-        textangle=0,
-        textposition="outside",
-        cliponaxis=False,
-        texttemplate="%{value: 4}%",
-    )
-    fig.show()
-    fig.write_image(f"img/apps{i[:8]}.png")
-```
 
 #### Víctimas y conocimiento del nombre de la violencia que sufrieron
 
-
-```python
-dict_conocimiento_frecuencia = {}
-for i in violencias:
-    df = datos.query(f"{i} == 1")["vdbg"].value_counts()
-    dict_conocimiento_frecuencia[violencias_nombres[i]] = round(df / df.sum() * 100, 2)
-```
-
-
-```python
-df_victima_conocimiento = pd.DataFrame.from_dict(
-    dict_conocimiento_frecuencia, orient="index"
-).fillna(0)
-
-df_victima_conocimiento.columns.name = "Conocimiento del nombre de la violencia"
-
-df_victima_conocimiento
-```
-
-
+Esta tabla contiene la información de las mujeres que sufrieron las violencias y se compara con la respuesta de si conoce o no el nombre.
 
 
 <div>
@@ -3251,10 +1830,6 @@ df_victima_conocimiento
 </div>
 
 
-
-Esta tabla contiene la información de las mujeres que sufrieron las violencias y se compara con la respuesta de si conoce o no el nombre.
-
-
 ## Reporte de resultados para los hombres que respondieron la encuesta
 
 Los siguientes resultados corresponden a los 21 **hombres** que respondieron la encuesta.
@@ -3262,32 +1837,8 @@ Los siguientes resultados corresponden a los 21 **hombres** que respondieron la 
 ### Rangos de edad
 
 
-```python
-fig = px.bar(tbl_edad, text=tbl_edad_porcentaje)
-fig.update_layout(
-    title="Rangos de edades",
-    xaxis_title="Edades",
-    yaxis_title="% de hombres",
-    font=dict(
-        family="Arial",
-        size=18,
-        color="black",
-    ),
-    width=1500,
-    height=800,
-)
-fig.update_traces(
-    textfont_size=18,
-    textangle=0,
-    textposition="outside",
-    cliponaxis=False,
-    showlegend=False,
-    marker_color="rgb(157, 178, 191)",
-    marker_line_color="white",
-)
-fig.show()
 fig.write_image("img/hombres/edades.png");
-```
+
 
 
 ### Respuestas por estados
@@ -3370,7 +1921,6 @@ fig.write_image("img/hombres/edades.png");
 </div>
 
 
-### Ocupaciones de los hombres
 
 #### Ocupaciones más comunes
 
@@ -3500,63 +2050,16 @@ En "otros" hay 2 respuestas, que se dividen de la siguiente manera:
 ### Horas de uso de internet
 
 
-```python
-fig = px.bar(tbl_uso_internet, text=tbl_uso_porcentaje)
-fig.update_layout(
-    title="Uso de internet por rangos de tiempo",
-    xaxis_title="Tiempo",
-    yaxis_title="% de hombres",
-    font=dict(
-        family="Arial",
-        size=18,
-        color="black",
-    ),
-    width=1500,
-    height=800,
-)
-fig.update_traces(
-    textfont_size=18,
-    textangle=0,
-    textposition="outside",
-    cliponaxis=False,
-    showlegend=False,
-    marker_color="rgb(39, 55, 77)",
-    marker_line_color="white",
-)
-fig.show()
 fig.write_image("img/hombres/uso_internet.png")
-```
+
 
 
 ### Principales usos de internet
 
 
-```python
-fig = px.bar(tbl_usos_concat[0], text=tbl_usos_concat.p)
-fig.update_layout(
-    title="Usos de internet",
-    xaxis_title="Actividades",
-    yaxis_title="% de hombres",
-    font=dict(
-        family="Arial",
-        size=18,
-        color="black",
-    ),
-    width=1500,
-    height=900,
-)
-fig.update_traces(
-    textfont_size=18,
-    textangle=0,
-    textposition="outside",
-    cliponaxis=False,
-    showlegend=False,
-    marker_color="rgb(39, 55, 77)",
-    marker_line_color="white",
-)
-fig.show()
+
 fig.write_image("img/hombres/usos_internet.png")
-```
+
 
 En el caso de la respuesta "Otras actividades", se desglosa de la siguiente manera:
 
@@ -3598,125 +2101,25 @@ En el caso de la respuesta "Otras actividades", se desglosa de la siguiente mane
 
 ### Aumento de uso de internet por Covid19
 
+aumento de tiempo de conexión por covid
 
-```python
-fig = go.Figure(data=[go.Pie(labels=tbl_covid_aumento.index, values=tbl_covid_aumento)])
-fig.update_layout(
-    title_text="Aumento del uso de internet",
-    legend_title="¿Has aumentado tu tiempo de <br> conexión a internet?",
-    font=dict(family="Arial", size=18, color="black"),
-    width=1500,
-    height=800,
-)
-fig.update_traces(
-    marker=dict(
-        colors=["rgb(39, 55, 77)", "rgb(82, 109, 130)"],
-        line=dict(color="white", width=1),
-    )
-)
-fig.show()
 fig.write_image("img/hombres/covid.png")
-```
-
+¡
 
 ### Uso de redes sociales/aplicaciones
 
 
-```python
-fig = px.bar(
-    tbl_aplicaciones.sort_values("No la utilizo"),
-    orientation="h",
-    color_discrete_sequence=[
-        "rgb(39, 55, 77)",
-        "rgb(82, 109, 130)",
-        "rgb(102, 102, 102)",
-        "rgb(157, 178, 191)",
-        "rgb(221, 230, 237)",
-    ],
-    width=1500,
-    height=800,
-)
-fig.update_layout(
-    title="Uso de aplicaciones/redes sociales",
-    xaxis_title="% de hombres",
-    yaxis_title="Aplicación/red social",
-    legend_title="Horas de uso diario",
-    font=dict(
-        family="Arial",
-        size=18,
-        color="black",
-    ),
-)
-
-fig.show()
 fig.write_image("img/hombres/uso_apps.png")
-```
+
 
 ### Incidencia de violencias
 
 
-```python
-fig = px.bar(
-    sufrio_porcentaje[["Sí", "No"]].sort_values("Sí"),
-    orientation="h",
-    text_auto=True,
-    color_discrete_map={"Sí": "rgb(39, 55, 77)", "No": "rgb(82, 109, 130)"},
-    width=1500,
-    height=800,
-)
-fig.update_layout(
-    title="Incidencia de violencias",
-    yaxis_title="Violencia",
-    xaxis_title="% de hombres",
-    legend_title="¿Sufrió la violencia?",
-    font=dict(
-        family="Arial",
-        size=18,
-        color="black",
-    ),
-)
-fig.update_traces(
-    textfont_size=18,
-    textangle=0,
-    cliponaxis=False,
-    marker_line_color="white",
-    texttemplate="%{value: 4} %",
-)
-fig.show()
 fig.write_image("img/hombres/incidencia.png")
-```
 
 
-```python
-fig = px.bar(
-    tbl_violencia_porcentaje,
-    text_auto=True,
-)
-fig.update_layout(
-    title="Cantidad de violencias sufridas",
-    xaxis_title="Nº de violencias sufridas",
-    yaxis_title="% de hombres",
-    font=dict(
-        family="Arial",
-        size=18,
-        color="black",
-    ),
-    width=1500,
-    height=800,
-)
-fig.update_traces(
-    textfont_size=18,
-    textangle=0,
-    textposition="outside",
-    cliponaxis=False,
-    showlegend=False,
-    marker_line_color="white",
-    marker_color="rgb(39, 55, 77)",
-    texttemplate="%{value}%",
-)
-fig.show()
 fig.write_image("img/hombres/numero_violencia.png")
-```
+
 
 
 #### Resultados para los casos de duplicación de identidad
@@ -3724,72 +2127,43 @@ fig.write_image("img/hombres/numero_violencia.png")
 
 Se han reportado 4 casos de duplicación de identidad.
 
+Se han reportado 60 casos de ciberdifamación, indicando el 36.67% haber sido víctimas en 2 o más ocasiones.  
 
+![Frecuencia de incidencia de ciberdifamación](img/incidencia_ciberdifamacion.png)
 
-```python
-frecuencia_identidad = fg.grafico_frecuencia(tbl_identidad, "M")
-```
+- Pocas mujeres manifiestan haber sufrido esta violencia en los últimos seis meses, como se muestra en el siguiente gráfico:
 
-```python
-temporalidad_identidad = fg.grafico_temporalidad(tbl_identidad, "H")
-```
+![Porcentaje de víctimas de ciberdifamación en los últimos 6 meses](img/6meses_ciberdifamacion.png)
 
-```python
-edad_identidad = fg.grafico_edad(tbl_identidad, "Hombre")
-```
+- Alrededor del 70% de las mujeres indican haber tenido 39 años o menos cuando fueron víctimas de ciberdifamación por primera vez.
 
+![Rangos de edad de las víctimas de ciberdifamación por primera vez](img/edades_ciberdifamacion.png)
 
-```python
-parentesco_identidad = fg.grafico_parentesco(tbl_identidad, "H")
-```
+- A continuación se observan las respuestas en cuanto al parentesco de la víctima con la persona agresora:
 
-```python
-sexo_identidad = fg.grafico_sexo_parentesco(tbl_identidad, "H")
-```
+![Parentesco de la víctima de ciberdifamacion con la persona agresora](img/parentesco_ciberdifamacion.png)
+
+El 70% logró identificar a la persona agresora, de los cuales el 25% indica que tenía una amistad con su agresor.
+
+- De estos casos, _alrededor del 65% reporta haber sufrido de ciberdifamación causada por una mujer_.
+
+![Sexo de la persona agresora para ciberdifamación](img/sexo_ciberdifamacionM.png)
+
+- Por su parte, Facebook es la red social más frecuente donde se produce la ciberdifamación, seguida de WhatsApp y correo electrónico. Esto se observa en el gráfico a continuación:
+
+![Aplicaciones por las cuales se produjo ciberdifamación](img/medios_ciberdifamacion.png)
+
+Posteriormente se muestra una tabla con otras aplicaciones reportadas por las víctimas de ciberdifamación:
+
 
     Para duplicación de identidad todas las personas agresoras son de sexo Hombre
 
 
 
-```python
-medios_identidad = fg.grafico_medios(tbl_identidad, "H")[2]
-```
-
 
 #### Resultados para los casos de ciberacoso
 
 Se han reportado 5 casos de ciberacoso.
-
-
-
-```python
-frecuencia_ciberacoso = fg.grafico_frecuencia(tbl_ciberacoso, "H")
-```
-
-
-
-```python
-temporalidad_ciberacoso = fg.grafico_temporalidad(tbl_ciberacoso, "H")
-```
-
-
-```python
-edad_ciberacoso = fg.grafico_edad(tbl_ciberacoso, "H")
-```
-
-
-```python
-parentesco_ciberacoso = fg.grafico_parentesco(tbl_ciberacoso, "H")
-```
-
-```python
-sexo_ciberacoso = fg.grafico_sexo_parentesco(tbl_ciberacoso, "H")
-```
-
-
-```python
-medios_ciberacoso = fg.grafico_medios(tbl_ciberacoso, "H")[2]
-```
 
 #### Resultados para los casos de doxxing
 
@@ -3798,40 +2172,12 @@ Se han reportado 2 casos de doxxing.
 
 
 
-```python
-frecuencia_doxxing = fg.grafico_frecuencia(tbl_doxxing, "H")
-```
-
-```python
-temporalidad_doxxing = fg.grafico_temporalidad(tbl_doxxing, "H")
-```
-
     Las personas que sufrieron de doxxing, manifiestan que no ocurrió durante los últimos 6 meses
 
 
 
-```python
-edad_doxxing = fg.grafico_edad(tbl_doxxing, "H")
-```
-
-
-```python
-parentesco_doxxing = fg.grafico_parentesco(tbl_doxxing, "H")
-```
-
-
-
-```python
-sexo_doxxing = fg.grafico_sexo_parentesco(tbl_doxxing, "H")
-```
-
     Para doxxing todas las personas agresoras son de sexo Hombre
 
-
-
-```python
-medios_doxxing = fg.grafico_medios(tbl_doxxing, "H")[2]
-```
 
 
 <div>
@@ -3877,76 +2223,10 @@ Se han reportado 6 casos de mobbing
 
 
 
-```python
-frecuencia_mobbing = fg.grafico_frecuencia(tbl_mobbing, "H")
-```
-
-
-```python
-temporalidad_mobbing = fg.grafico_temporalidad(tbl_mobbing, "H")
-```
-
-
-```python
-edad_mobbing = fg.grafico_edad(tbl_mobbing, "H")
-```
-
-
-```python
-parentesco_mobbing = fg.grafico_parentesco(tbl_mobbing, "H")
-```
-
-
-
-
-```python
-sexo_mobbing = fg.grafico_sexo_parentesco(tbl_mobbing, "H")
-```
-
-
-
-```python
-medios_mobbing = fg.grafico_medios(tbl_mobbing, "H")[2]
-```
-
-
 #### Resultados para los casos de ciberdifamación
 
 
-
 Se han reportado 4 casos de ciberdifamación.
-
-
-
-```python
-frecuencia_ciberdifamacion = fg.grafico_frecuencia(tbl_ciberdifamacion, "H")
-```
-
-
-```python
-temporalidad_ciberdifamacion = fg.grafico_temporalidad(tbl_ciberdifamacion, "H")
-```
-
-
-
-```python
-edad_ciberdifamacion = fg.grafico_edad(tbl_ciberdifamacion, "H")
-```
-
-```python
-parentesco_ciberdifamacion = fg.grafico_parentesco(tbl_ciberdifamacion, "H")
-```
-
-
-```python
-sexo_ciberdifamacion = fg.grafico_sexo_parentesco(tbl_ciberdifamacion, "H")
-```
-
-
-
-```python
-medios_ciberdifamacion = fg.grafico_medios(tbl_ciberdifamacion, "H")[2]
-```
 
 
 #### Resultados para los casos de cibervigilancia (stalking)
@@ -3955,82 +2235,15 @@ medios_ciberdifamacion = fg.grafico_medios(tbl_ciberdifamacion, "H")[2]
 Se han reportado 7 casos de cibervigilancia (stalking).
 
 
-
-```python
-frecuencia_stalking = fg.grafico_frecuencia(tbl_stalking, "H")
-```
-
-```python
-temporalidad_stalking = fg.grafico_temporalidad(tbl_stalking, "H")
-```
-
-
-
-
-```python
-edad_stalking = fg.grafico_edad(tbl_stalking, "H")
-```
-
-
-
-```python
-parentesco_stalking = fg.grafico_parentesco(tbl_stalking, "H")
-```
-
-
-
-```python
-sexo_stalking = fg.grafico_sexo_parentesco(tbl_stalking, "H")
-```
-
-
-
-
-```python
-medios_stalking = fg.grafico_medios(tbl_stalking, "H")[2]
-```
-
 #### Resultados para los casos de ciberextorsión
 
 Se han reportado 4 casos de ciberextorsión.
 
 
-
-```python
-frecuencia_ciberextorsion = fg.grafico_frecuencia(tbl_ciberextorsion, "H")
-```
-
-```python
-temporalidad_ciberextorsion = fg.grafico_temporalidad(tbl_ciberextorsion, "H")
-```
-
     Las personas que sufrieron de ciberextorsion, manifiestan que no ocurrió durante los últimos 6 meses
 
 
-
-```python
-edad_ciberextorsion = fg.grafico_edad(tbl_ciberextorsion, "H")
-```
-
-
-
-```python
-parentesco_ciberextorsion = fg.grafico_parentesco(tbl_ciberextorsion, "H")
-```
-
-
-```python
-sexo_ciberextorsion = fg.grafico_sexo_parentesco(tbl_ciberextorsion, "H")
-```
-
     Para ciberextorsión todas las personas agresoras son de sexo Hombre
-
-
-
-```python
-medios_ciberextorsion = fg.grafico_medios(tbl_ciberextorsion, "H")[2]
-```
-
 
 
 #### Resultados para los casos de grooming
@@ -4038,47 +2251,7 @@ medios_ciberextorsion = fg.grafico_medios(tbl_ciberextorsion, "H")[2]
 Se han reportado 8 casos de grooming.
 
 
-
-```python
-frecuencia_grooming = fg.grafico_frecuencia(tbl_grooming, "H")
-```
-
-
-```python
-temporalidad_grooming = fg.grafico_temporalidad(tbl_grooming, "H")
-```
-
-```python
-edad_grooming = fg.grafico_edad(tbl_grooming, "H")
-```
-
-
-```python
-parentesco_grooming = fg.grafico_parentesco(tbl_grooming, "H")
-```
-
-
-```python
-sexo_grooming = fg.grafico_sexo_parentesco(tbl_grooming, "H")
-```
-
     Para grooming todas las personas agresoras son de sexo Hombre
-
-
-
-```python
-medios_grooming = fg.grafico_medios(tbl_grooming, "H")[2]
-```
-
-
-```python
-pd.DataFrame(tbl_grooming.otraR_grooming.value_counts()).rename_axis(
-    index={"otraR_grooming": "Otras aplicaciones o redes sociales"}
-).rename(columns={"count": "N° de hombres"})
-```
-
-
-
 
 <div>
 <style scoped>
@@ -4119,37 +2292,7 @@ pd.DataFrame(tbl_grooming.otraR_grooming.value_counts()).rename_axis(
 #### Resultados para los casos de los casos de phishing/vishing/smishing
 
 
-`Se han reportado 7 casos de phishing/vishing/smishing.
-
-
-
-```python
-frecuencia_phishing_vs = fg.grafico_frecuencia(tbl_phishing_vs, "H")
-```
-
-
-```python
-temporalidad_phishing_vs = fg.grafico_temporalidad(tbl_phishing_vs, "H")
-```
-
-```python
-edad_phishing_vs = fg.grafico_edad(tbl_phishing_vs, "H")
-```
-
-
-```python
-parentesco_phishing_vs = fg.grafico_parentesco(tbl_phishing_vs, "H")
-```
-
-
-```python
-sexo_phishing_vs = fg.grafico_sexo_parentesco(tbl_phishing_vs, "H")
-```
-
-
-```python
-medios_phishing_vs = fg.grafico_medios(tbl_phishing_vs, "H")[2]
-```
+Se han reportado 7 casos de phishing/vishing/smishing.
 
 
 #### Resultados para los casos de trata
@@ -4158,41 +2301,7 @@ medios_phishing_vs = fg.grafico_medios(tbl_phishing_vs, "H")[2]
  Se han reportado 2 casos de trata de persona en línea.
 
 
-
-```python
-frecuencia_trata = fg.grafico_frecuencia(tbl_trata, "H")
-```
-
-
-
-```python
-temporalidad_trata = fg.grafico_temporalidad(tbl_trata, "H")
-```
-
     Las personas que sufrieron de trata, manifiestan que sí ocurrió durante los últimos 6 meses
-
-
-
-```python
-edad_trata = fg.grafico_edad(tbl_trata, "H")
-```
-
-
-
-```python
-parentesco_trata = fg.grafico_parentesco(tbl_trata, "H")
-```
-
-    Las personas que sufrieron de {i} manifiestan que su parentesco con su agresor es: {data.index[0]}.lower()}
-
-
-
-
-
-```python
-medios_trata = fg.grafico_medios(tbl_trata, "H")[2]
-```
-
 
 
 #### Resultados para los casos de exclusión
@@ -4201,61 +2310,12 @@ medios_trata = fg.grafico_medios(tbl_trata, "H")[2]
 Se han reportado 3 víctimas de exclusión digital.
 
 
-
-```python
-frecuencia_exclusion = fg.grafico_frecuencia(tbl_exclusion, "H")
-```
-
-
-
-
-```python
-temporalidad_exclusion = fg.grafico_temporalidad(tbl_exclusion, "H")
-```
-
-
-
-```python
-edad_exclusion = fg.grafico_edad(tbl_exclusion, "H")
-```
-
-
 Para exclusión no se pregunto por agresor.
-
-
-```python
-medios_exclusion = fg.grafico_medios(tbl_exclusion, "H")[2]
-```
 
 
 #### Resultados para los casos de cyberflashing
 
 Se han reportado 9 casos de cyberflashing
-
-
-
-```python
-frecuencia_cyberflashing = fg.grafico_frecuencia(tbl_cyberflashing, "H")
-```
-
-
-```python
-edad_cyberflashing = fg.grafico_edad(tbl_cyberflashing, "H")
-```
-
-
-```python
-parentesco_cyberflashing = fg.grafico_parentesco(tbl_cyberflashing, "H")
-```
-
-    Las personas que sufrieron de {i} manifiestan que su parentesco con su agresor es: {data.index[0]}.lower()}
-
-
-
-
-```python
-medios_cyberflashing = fg.grafico_medios(tbl_cyberflashing, "H")[2]
-```
 
 
 #### Resultados para los casos de clonación de aplicaciones
@@ -4264,50 +2324,10 @@ medios_cyberflashing = fg.grafico_medios(tbl_cyberflashing, "H")[2]
 Se han reportado 4 casos de clonación de aplicaciones
 
 
-
-```python
-frecuencia_clonacion = fg.grafico_frecuencia(tbl_clonacion, "H")
-```
-
-
-```python
-temporalidad_clonacion = fg.grafico_temporalidad(tbl_clonacion, "H")
-```
-
-
-
-
-```python
-edad_clonacion = fg.grafico_edad(tbl_clonacion, "H")
-```
-
-
-```python
-medios_clonacion = fg.grafico_medios(tbl_clonacion, "H")[2]
-```
-
-
 ### Conocimiento sobre violencia digital basada en género
 
-
-```python
-fig = go.Figure(data=[go.Pie(labels=tbl_vdbg.index, values=tbl_vdbg)])
-fig.update_layout(
-    title_text="Conocimiento de VDBG",
     legend_title="¿Habías escuchado antes el término <br> Violencia Digital Basada en Género?",
-    font=dict(family="Arial", size=18, color="black"),
-)
-fig.update_traces(
-    marker=dict(
-        colors=["rgb(39, 55, 77)", "rgb(82, 109, 130)"],
-        line=dict(color="white", width=1),
-    )
-)
-fig.show()
-fig.write_image("img/hombres/vdbg.png")
-```
-
-
+ 
 <div>
 <style scoped>
     .dataframe tbody tr th:only-of-type {
@@ -4386,229 +2406,37 @@ fig.write_image("img/hombres/vdbg.png")
 </div>
 
 
-
-
-```python
-fig = px.bar(
-    tbl_conocimiento_violencia.sort_values("cantidad", ascending=False),
-    y="cantidad",
-    x=tbl_conocimiento_violencia.index,
-    text_auto=True,
-)
-fig.update_layout(
-    title="Conocimiento de la violencia",
-    xaxis_title="Violencia",
-    yaxis_title="% de hombres",
-    font=dict(
-        family="Arial",
-        size=18,
-        color="black",
-    ),
-)
-fig.update_traces(
-    textfont_size=18,
-    textangle=0,
-    textposition="outside",
-    cliponaxis=False,
-    showlegend=False,
-    marker_color="rgb(82, 109, 130)",
-    marker_line_color="white",
-    texttemplate="%{value: .4} %",
-)
-fig.show()
 fig.write_image("img/hombres/conocimiento_violencia.png")
-```
+
 
 
 ### Reacciones de las víctimas al sufrir la(s) violencia(s)
 
 
-
-```python
-fig = px.bar(
-    tbl_reacciones.sort_values("cantidad", ascending=False),
-    y=tbl_reacciones["cantidad"],
-    x=tbl_reacciones.index,
-    text_auto=True,
-)
-fig.update_layout(
-    title="Reacción de la víctima al sufrir la(s) violencia(s)",
-    xaxis_title="Violencia",
-    yaxis_title="Nº de Hombres",
-    font=dict(
-        family="Arial",
-        size=18,
-        color="black",
-    ),
-)
-fig.update_traces(
-    textfont_size=18,
-    textangle=0,
-    textposition="outside",
-    cliponaxis=False,
-    showlegend=False,
-    marker_color="rgb(157, 178, 191)",
-    marker_line_color="white",
-    texttemplate="%{value: .4} %",
-)
-fig.show()
-fig.write_image("img/hombres/reaccion_violencia.png")
-```
-
 ### Conocimiento de víctimas
 
 
-```python
-fig = go.Figure(data=[go.Pie(labels=tbl_victima.index, values=tbl_victima)])
-fig.update_layout(
-    title_text="Conocimiento de Víctimas",
     legend_title="¿Conoces a alguna mujer que haya <br> sido víctima de violencia digital?",
-)
-fig.update_traces(
-    marker=dict(
-        colors=["rgb(39, 55, 77)", "rgb(82, 109, 130)"],
-        line=dict(color="white", width=1),
-    )
-)
-fig.show()
-fig.write_image("img/hombres/victima.png")
-```
+
 Número de víctimas
 
-```python
-fig = px.bar(
-    num_victimas.sort_index(),
-    y=num_victimas.sort_index()["count"],
-    x=num_victimas.sort_index().index.values,
-    text=round(num_victimas.sort_index() / len(datos) * 100, 2)["count"],
-)
-fig.update_layout(
-    title="Cantidad de víctimas conocidas",
-    xaxis_title="Nº de victimas",
-    yaxis_title="% de hombres",
-    font=dict(
-        family="Arial",
-        size=18,
-        color="black",
-    ),
-)
-fig.update_traces(
-    textfont_size=18,
-    textangle=0,
-    textposition="outside",
-    cliponaxis=False,
-    showlegend=False,
-    marker_color="rgb(82, 109, 130)",
-    marker_line_color="white",
-    texttemplate="%{text: .4} %",
-)
-fig.show()
-fig.write_image("img/hombres/num_victimas.png")
-```
 
 ### Conocimiento de leyes y normas
 
 
-```python
-fig = go.Figure(data=[go.Pie(labels=tbl_leyes.index, values=tbl_leyes)])
-fig.update_layout(
-    title_text="Conocimiento de Leyes y Normas",
     legend_title="¿Conoces leyes o normativas en el país <br> que contemplan las violencias digitales?",
-)
-fig.update_traces(
-    marker=dict(
-        colors=["rgb(39, 55, 77)", "rgb(82, 109, 130)"],
-        line=dict(color="white", width=1),
-    )
-)
-fig.show()
-fig.write_image("img/hombres/ley.png")
-```
-
 
 ### Interacciones entre ciertos ítems de la encuesta
 
 #### Tipos de violencia y edad en que ocurrió por primera vez
 
-
-```python
-fig = px.bar(
-    edades_primera_vez,
-    x="Edad",
-    y="count",
-    color="violencia",
     title="Tasa de incidencia por grupo etario según tipo de violencia",
-    barmode="group",
-    color_discrete_sequence=px.colors.qualitative.Prism_r,
-    width=1200,
-    height=600,
-)
-fig.update_yaxes(title="% de hombres")
-fig.update_xaxes(
-    title="Rangos de edad",
-    labelalias={
-        "[0, 10)": "0-9",
-        "[10, 15)": "10-14",
-        "[15, 18)": "15-17",
-        "[18, 25)": "18-24",
-        "[25, 30)": "24-29",
-        "[30, 40)": "30-39",
-        "[40, 50)": "40-49",
-        "[50, 60)": "50-59",
-        "[60, 75)": "60 y más",
-    },
-)
-fig.show()
-fig.write_image("img/violencia_edad2.png")
-```
+
 
 #### Tipo de violencia según el medio por el cual ocurrió
 
 
-
-```python
-fig = px.bar(
-    tbl_violencia_medio.sort_values("cantidad", ascending=False),
-    x="cantidad",
-    y="violencia",
-    color="Medio",
-    title="Tipo de violencia según el medio por el cual ocurrió",
-    barmode="stack",
-    orientation="h",
-    color_discrete_sequence=px.colors.qualitative.Antique_r,
-    width=1600,
-    height=600,
-)
-fig.update_yaxes(title="Violencia")
-fig.update_xaxes(title="% de hombres")
-fig.show()
-fig.write_image("img/hombres/violencia_medio1.png")
-```
-
 #### Parentesco de la persona agresora con las mujeres que han sufrido violencias
-
-
-```python
-fig = px.bar(
-    tbl_parentesco_,
-    x="violencia",
-    y="count",
-    color="parentesco",
-    title="Parentesco del agresor con los hombres que han sufrido violencias",
-    barmode="group",
-    color_discrete_sequence=px.colors.qualitative.Prism_r,
-    width=1200,
-    height=600,
-)
-fig.update_layout(
-    legend_title="Parentesco con el agresor(a):",
-    font=dict(family="Arial", size=18, color="black"),
-)
-fig.update_xaxes(title="Violencia")
-fig.update_yaxes(title="% de hombres")
-fig.show()
-fig.write_image("img/hombres/violencia_parentesco1.png")
-```
 
 NOTA: Para las siguientes violencias la pregunta sobre parentesco se reformuló a si logró o no identificar el agresor.
 
@@ -4707,206 +2535,19 @@ NOTA: Para mobbing la víctima por la naturaleza de la agresión conoce a su agr
 #### Identificación de la persona agresora
 
 
-```python
-fig = px.bar(
-    porcentaje_identificacion,
-    barmode="group",
-    text_auto="True",
-    color_discrete_map={"Sí": "rgb(39, 55, 77)", "No": "rgb(82, 109, 130)"},
-    width=1200,
-    height=600,
-)
-fig.update_layout(
-    title="Identificación del agresor(a)",
-    xaxis_title="Violencia",
-    yaxis_title="% de hombres",
-    legend_title="¿Identificó al agresor(a)?",
-    font=dict(
-        family="Arial",
-        size=18,
-        color="black",
-    ),
-)
-fig.update_traces(
-    textfont_size=18,
-    textangle=0,
-    textposition="outside",
-    cliponaxis=False,
-    texttemplate="%{value} %",
-)
-
-fig.show()
-fig.write_image("img/hombres/id_agresor.png")
-```
-
-
 #### Sexo del agresor por tipo de violencia
 
 
-```python
-fig = px.bar(
-    sexo_porcentaje,
-    barmode="group",
-    color_discrete_sequence=[
-        "rgb(39, 55, 77)",
-        "rgb(82, 109, 130)",
-        "rgb(157, 178, 191)",
-    ],
-    width=1200,
-    height=600,
-    text_auto=True,
-)
-fig.update_layout(
     title="Sexo del agresor por tipo de violencia",
-    xaxis_title="Violencia",
-    yaxis_title="% de hombres",
-    legend_title="Sexo del agresor",
-    font=dict(
-        family="Arial",
-        size=18,
-        color="black",
-    ),
-)
-fig.update_traces(
-    textfont_size=18,
-    textangle=0,
-    textposition="outside",
-    cliponaxis=False,
-    texttemplate="%{value: } %",
-)
 
-fig.show()
-fig.write_image("img/hombres/sexo_agresor_violencia.png")
-```
 
 #### Sexo del agresor(a) y parentesco con la víctima por tipo de violencia
-
-
-
-
-
-```python
-fig = px.bar(
-    porcentaje_parentesco_sexo,
-    x="Parentesco",
-    y="count",
-    color="Sexo",
-    barmode="group",
-    facet_col="Violencia",
-    facet_col_wrap=2,
-    color_discrete_map={"Mujer": "rgb(39, 55, 77)", "Hombre": "rgb(82, 109, 130)"},
-    width=1000,
-    height=1500,
-    text_auto=True,
-)
-fig.update_layout(
-    title="Sexo del agresor y parentesco de la víctima por tipo de violencia",
-    legend_title="Sexo del agresor",
-    font=dict(
-        family="Arial",
-        size=18,
-        color="black",
-    ),
-)
-fig.update_traces(
-    textfont_size=18,
-    textangle=0,
-    textposition="outside",
-    cliponaxis=False,
-    texttemplate="%{value} %",
-)
-fig.for_each_annotation(lambda a: a.update(text=a.text.split("=")[-1]))
-fig.for_each_yaxis(lambda y: y.update(title=""))
-fig.add_annotation(
-    x=-0.07,
-    y=0.5,
-    text="Porcentaje de agresores",
-    textangle=-90,
-    xref="paper",
-    yref="paper",
-)
-fig.show()
-fig.write_image("img/hombres/violencia_parentesco_sexo.png")
-```
 
 
 
 #### Sexo del agresor(a) y parentesco con la víctima por tipo de violencia: individual
 
 
-
-```python
-for i, j in zip(sp_df, lista_para_graficar):
-    v = j.Violencia[0]
-    if len(i.columns) < 2:
-        print(f"El sexo de las personas agresoras es {i.columns.values} para {v}")
-    else:
-        if v in violencias_nombres.keys():
-            # Creating instance of the figure
-            fig = go.Figure()
-
-            # Adding Male data to the figure
-            fig.add_trace(
-                go.Bar(
-                    y=i.index,
-                    x=i.Hombre,
-                    name="Hombre",
-                    orientation="h",
-                    text=-1 * i.Hombre.values.astype("float"),
-                    marker_color="rgb(39, 55, 77)",
-                )
-            )
-
-            # Adding Female data to the figure
-            fig.add_trace(
-                go.Bar(
-                    y=i.index,
-                    x=i.Mujer,
-                    name="Mujer",
-                    orientation="h",
-                    text=i.Mujer,
-                    marker_color="rgb(82, 109, 130)",
-                )
-            )
-
-            # Updating the layout for our graph
-            fig.update_layout(
-                title=" ".join(
-                    [
-                        "Sexo del agresor y parentesco con la víctima de",
-                        violencias_nombres[v].casefold(),
-                    ]
-                ),
-                legend_title="Sexo del agresor",
-                title_font_size=22,
-                barmode="relative",
-                bargap=0.0,
-                bargroupgap=0.5,
-                xaxis=dict(
-                    title="% de hombres",
-                    title_font_size=14,
-                    tickvals=[-100, -50, 0, 0, 50, 100],
-                    ticktext=["100", "50", "0", "0", "50", "100"],
-                ),
-                width=1200,
-                height=400,
-                margin=dict(l=30),
-                font=dict(
-                    family="Arial",
-                    size=18,
-                    color="black",
-                ),
-            )
-            fig.update_traces(
-                textfont_size=10,
-                textangle=0,
-                textposition="outside",
-                cliponaxis=False,
-                texttemplate="%{text: 4}%",
-            )
-            fig.show()
-            fig.write_image("".join(["img/hombres/piramide_", v, ".png"]))
-```
 
     El sexo de las personas agresoras es ['Hombre'] para identidad
 
@@ -4926,65 +2567,11 @@ for i, j in zip(sp_df, lista_para_graficar):
 
 
 
-```python
-fig = px.bar(
-    tbl_vo.sort_values("Abogado(a)"),
-    orientation="h",
-    color_discrete_sequence=px.colors.qualitative.Antique_r,
-    width=1200,
-    height=600,
-)
-fig.update_layout(
+
     title="Ocupaciones más frecuentes por violencia sufrida",
-    xaxis_title="% de hombres",
-    yaxis_title="Violencia",
-    legend_title="Ocupaciones",
-    font=dict(
-        family="Arial",
-        size=18,
-        color="black",
-    ),
-)
-
-fig.show()
-fig.write_image("img/hombres/violencia_ocupacion.png")
-```
-
 
 
 #### Violencias por estados
-
-
-```python
-fig = px.bar(
-    tbl_ve.sort_index(axis=1),
-    orientation="h",
-    color_discrete_sequence=px.colors.qualitative.Antique_r,
-    width=1500,
-    height=800,
-)
-fig.update_layout(
-    title="Ubicación de las víctimas por violencia sufrida",
-    xaxis_title="% de hombres",
-    yaxis_title="Violencia",
-    legend_title="Estado",
-    font=dict(
-        family="Arial",
-        size=17,
-        color="black",
-    ),
-)
-fig.update_traces(
-    textfont_size=18,
-    textangle=0,
-    cliponaxis=False,
-    marker_line_color="white",
-    texttemplate="%{value: 4} %",
-)
-fig.show()
-fig.write_image("img/hombres/violencia_estado.png")
-```
-
 
 
 #### Promedio de incidencias
@@ -4999,78 +2586,13 @@ En promedio, un hombre es víctima de 3 violencias.
 #### Cantidad de veces en que la víctima reporta haber sufrido la violencia
 
 
-
-
-```python
-fig = px.bar(
-    tbl_repeticiones.sort_values("Solo una vez"),
-    orientation="h",
-    color_discrete_sequence=px.colors.qualitative.Antique_r,
-    width=1500,
-    height=800,
-)
-fig.update_layout(
-    title="Cantidad de veces que la víctima reporta haber sufrido la violencia",
-    xaxis_title="% de hombres",
-    yaxis_title="Violencia",
-    legend_title="Frecuencias",
-    font=dict(
-        family="Arial",
-        size=18,
-        color="black",
-    ),
-)
-fig.update_traces(
-    textfont_size=18,
-    textangle=0,
-    cliponaxis=False,
-    marker_line_color="white",
-    texttemplate="%{value: 4} %",
-)
-fig.show()
-fig.write_image("img/hombres/repeticiones_violencia.png")
-```
-
-
 #### Patrón de uso de aplicaciones por tipo de violencias y según medio más frecuente por el que ocurrió
 
 
 
-```python
-for i, j in zip(dict_medios_medios.keys(), medio_frecuente):
-    fig = px.bar(
-        dict_medios_medios[i],
-        orientation="v",
-        barmode="group",
-        color_discrete_sequence=px.colors.qualitative.Antique_r,
-        width=1500,
-        height=800,
-    )
-    fig.update_layout(
-        title=f"Patrón de uso de aplicaciones para {i.casefold()} sufrida por {j} ",
-        yaxis_title="% de hombres",
-        xaxis_title="Aplicaciones o red social",
-        legend_title="Frecuencia de uso",
-        font=dict(
-            family="Arial",
-            size=18,
-            color="black",
-        ),
-    )
-    fig.update_traces(
-        textfont_size=17,
-        textangle=0,
-        textposition="outside",
-        cliponaxis=False,
-        texttemplate="%{value: 4}%",
-    )
-    fig.show()
-    fig.write_image(f"img/hombres/apps{i[:8]}.png")
-```
-
-
 #### Víctimas y conocimiento del nombre de la violencia que sufrieron
 
+Esta tabla contiene la información de las mujeres que sufrieron las violencias y se compara con la respuesta de si conoce o no el nombre.
 
 <div>
 <style scoped>
@@ -5163,7 +2685,3 @@ for i, j in zip(dict_medios_medios.keys(), medio_frecuente):
   </tbody>
 </table>
 </div>
-
-
-
-Esta tabla contiene la información de las mujeres que sufrieron las violencias y se compara con la respuesta de si conoce o no el nombre.
